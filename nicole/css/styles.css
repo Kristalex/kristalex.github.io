@@ -1,0 +1,79 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #363636;
+}
+a:link {
+    color: #15628E;
+}
+a:hover {
+    color: #1A77AB;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 20px 0 -10px;
+    font-weight: normal;
+}
+
+.column {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #394589;
+    padding: 45px 0 60px;
+    text-align: center;
+    }
+    .header h1 {
+        font-size: 54px;
+        line-height: 1.3;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 20px;
+    }
+    .header_lead {
+        font-size: 24px;
+        color: #fff;
+        font-weight: 200;
+        max-width: 660px;
+        margin: 0 auto;
+    }
+
+.content {
+    padding: 60px 20px 50px;
+}
+
+.point-block {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    clear: both;
+    }
+    .point-block h2 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .point-block p {
+        margin: 15px 0 0;
+    }
+
+ul {
+    list-style: disc;
+    padding: 10px 0 0 30px;
+    }
+    ul li {
+        list-style: disc;
+        padding: 0 0 10px 0;
+    }
+
+
+
+.directoryItem {position: relative; text-align: center; width: 200px; margin: 50px;}
+.directoryItem .widget_themegrill_suffice_button {position: relative; color: #fff; margin-top: 75px; padding: 5px 20px; border: 1px #fff solid; border-radius: 20px; text-align: center; display: inline-block;}
+.directoryItem .widget_themegrill_suffice_image {position: absolute; left: 0; top: 0; border-radius: 50%;}
