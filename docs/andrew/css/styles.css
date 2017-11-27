@@ -1,8 +1,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 400;
+    color: #222;
 }
 a:link {
     color: #15628E;
@@ -32,14 +33,15 @@ a:hover {
     }
     .header_lead {
         font-size: 24px;
+        line-height: 1.6;
         color: #fff;
         font-weight: 200;
-        max-width: 660px;
+        max-width: 790px;
         margin: 0 auto;
     }
 
 .content {
-    padding: 60px 20px 0;
+    padding: 60px 20px 50px;
 }
 
 .point-block {
