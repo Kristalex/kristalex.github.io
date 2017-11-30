@@ -1,0 +1,78 @@
+@charset "UTF-8";
+body {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+	color: #222;
+}
+a:link {
+	color: #15628E;
+	text-decoration: none;
+}
+a:hover {
+	color: #1A77AB;
+	text-decoration: underline;
+}
+
+body, html, .content {
+	height: 100%;
+}
+.mainpage {
+	background: #262729 url('../img/bg-min.png') 0 0 no-repeat;
+}
+.content {
+	margin: 0 0 0 30%;
+	background: rgba(255,255,255,1);
+	padding: 8% 2% 0 9%;
+}
+.content_in {
+	max-width: 530px;
+}
+h1 {
+	font-size: 44px;
+	font-weight: 600;
+	margin: 20px 0 20px;
+}
+p {
+	margin: 0 0 20px;
+}
+ul li {
+	padding: 0 0 5px 26px;
+	position: relative;
+	}
+	ul li:before {
+		content: "";
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background: #b8b8b8;
+		position: absolute;
+		top: 12px;
+		left: 10px;
+	}
+
+.quote {
+	font-size: 20px;
+	line-height: 1.7;
+	font-weight: 300;
+	overflow: hidden;
+	padding: 0 0 0 13px;
+	position: relative;
+	margin: 50px 0 0;
+	}
+	.quote img {
+
+	}
+	.quote p {
+
+	}
+	.quote_leftquote {
+		position: absolute;
+		left: 0;
+		top: 0px;
+	}
+
+
+@media screen and (max-width:700px) {
+
+}
