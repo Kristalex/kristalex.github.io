@@ -58,3 +58,9 @@ a:hover {
         margin: 0 25px;
         border: 1px #E4E4E4 solid;
     }
+.point-block_img__left {
+    float: left;
+}
+.point-block__right {
+    padding-right: 70px;
+}
