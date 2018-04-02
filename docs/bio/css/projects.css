@@ -1,0 +1,149 @@
+.descProject {
+	padding: 15px 0 20px;
+	/*border-left: 3px #DD3A3A solid;*/
+	}
+	.descProject p {
+		margin: 0 0 15px;
+	}
+	.descProject .descProject_title {
+		font-size: 22px;
+		font-weight: 600;
+		line-height: 1.4;
+		margin-bottom: 20px;
+	}
+
+.projectsBookmark {
+	background: #C54E91;
+	background: #DD843A;
+	background: #238585;
+	background: #DD3A3A;
+	background: #3A9494;
+	background: #65B5B5;
+	background: rgba(221, 58, 58, 0.2);
+	background: rgba(255, 193, 142, 0.7);
+	background: #65B5B5;
+	background: rgba(101, 181, 181, 0.9);
+	background: #DD3A3A;
+
+	margin: 20px 0 35px -40px;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #fff;
+	display: inline-block;
+	padding: 3px 20px 2px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.projects {
+
+}
+.projects_item {
+	padding: 0px 6% 0 10%;
+	margin: 0 0 45px;
+	/*max-width: 350px;*/
+}
+.projects_item p {
+	font-weight: 300;
+	font-size: 15px;
+	clear: both;
+	margin: 0 0 5px;
+}
+.projects_item_img {
+	margin: 0 0 0 -15px;
+}
+.projects_item .projects_title {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.4;
+	color: #222;
+	margin: 20px 0 5px;
+	clear: none;
+	}
+	.projects_title a:link, .projects_title a:visited {
+		color: #222;
+	}
+	.projects_title a:hover {
+		color: #1285C0;
+	}
+.projects_item .projects_date {
+	color: #A0A0A0;
+}
+.projects_persona {
+	margin: 5px 10px 0 0;
+}
+
+.backLink {
+
+	}
+	.backLink:visited {
+		color: #1285C0;
+	}
+
+/** Project page **/
+.projectsDesc {
+	padding-top: 15px;
+}
+
+.persona {
+	margin: 45px 5% 0 5%;
+	}
+	.persona .projects_item_img {
+		width: 100%;
+		height: auto;
+		margin: -10px 0 0;
+		max-width: 180px;
+	}
+	.persona_title {
+		font-size: 22px;
+		font-weight: 600;
+		line-height: 1.4;
+	}
+	.persona_ocupation {
+		color: #A0A0A0;
+		padding: 0 0 10px;
+	}
+	.persona ul li {
+		padding: 0 0 5px 26px;
+		position: relative;
+		}
+		.persona ul li:before {
+			content: "";
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: #222;
+			position: absolute;
+			top: 12px;
+			left: 10px;
+		}
+
+.stages {
+	line-height: 1.4;
+	}
+	.stages_title {
+		background: #65B5B5;
+		color: #fff;
+		text-align: center;
+		padding: 12px 15px;
+		border-radius: 4px;
+		margin: 25px 0 25px;
+		min-height: 45px;
+		line-height: 45px;
+	}
+	.stages_title__grey {
+		background: #b8b8b8;
+		line-height: 1.4;
+	}
+	.stages p {
+		text-align: center;
+		margin: 0 0 20px;
+	 }
+
+
+@media screen and (max-width:1024px) {
+	.projects_item {
+		padding: 0px 7% 0 0;
+	}
+}

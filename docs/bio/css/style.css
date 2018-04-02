@@ -9,14 +9,19 @@ body {
 	background-size: 1300px 867px;
 }
 a:link {
-	color: #15628E;
+	color: #1285C0;
 	text-decoration: none;
 }
 a:hover {
-	color: #1A77AB;
+	color: #1285C0;
 	text-decoration: underline;
 }
-
+a:visited {
+	color: #3523CA;
+}
+.nowrap {
+	white-space: nowrap;
+}
 body, html {
 	height: 100%;
 	min-height: 100%;
@@ -37,9 +42,13 @@ body, html {
 	.content_wide {
 		padding-right: 40px;
 	}
+	.content_medium {
+		max-width: 865px;
+	}
 .otherPages .content {
 	margin-left: 15%;
-	padding-left: 40px;
+	padding-left: 9%;
+	background: #F7F7F7;
 }
 .header {
 	overflow: hidden;
@@ -47,6 +56,7 @@ body, html {
 	.logo {
 		position: relative;
 		float: left;
+		height: 41px;
 	}
 	.logo:hover::before {
 		display: block;
@@ -75,7 +85,7 @@ body, html {
 		}
 		.menu_item {
 			display: inline-block;
-			margin-left: 15px;
+			margin-left: 20px;
 			line-height: 1.6;
 			}
 			.menu a:link, .menu a:visited {
@@ -88,10 +98,19 @@ body, html {
 		.menu_item-current {
 			border-bottom: 3px #DD3A3A solid;
 		}
+.mainContent {
+	padding-top: 40px;
+	padding-bottom: 70px;
+}
 h1 {
 	font-size: 40px;
 	font-weight: 600;
-	margin: 25px 0 5px;
+	margin: 0 0 25px;
+}
+
+.desc {
+	max-width: 570px;
+	font-weight: 300;
 }
 
 .points {
@@ -100,7 +119,7 @@ h1 {
 	padding-top: 30px;
 	padding-left: 40px;
 	padding-bottom: 30px;
-	margin: 40px 0 40px 0;
+	margin: -35px 0 40px 0;
 	font-size: 15px;
 	}
 	.points_bold {
@@ -145,6 +164,13 @@ h1 {
 	.textMe a:hover {
 		opacity: 0.8;
 	}
+
+@media screen and (max-width:1280px) {
+	.otherPages .content {
+		margin-left: 8%;
+		padding-left: 8%;
+	}
+}
 
 @media screen and (max-width:700px) {
 	.content {
