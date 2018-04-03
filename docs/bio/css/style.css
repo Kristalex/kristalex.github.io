@@ -19,8 +19,40 @@ a:hover {
 a:visited {
 	color: #3523CA;
 }
+ul.g-list li {
+	padding: 0 0 5px 26px;
+	position: relative;
+}
+ul.g-list li:before {
+	content: "";
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #222;
+	position: absolute;
+	top: 12px;
+	left: 10px;
+}
+ol.g-list {
+	padding: 10px 0 0 26px;
+	list-style: decimal;
+	}
+	ol.g-list li {
+		padding: 0 0 15px 0;
+		list-style: decimal;
+	}
 .nowrap {
 	white-space: nowrap;
+}
+.comment {
+	color: #222;
+	font-size: 15px;
+}
+.g-h2 {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin: 20px 0 15px;
 }
 body, html {
 	height: 100%;
@@ -129,18 +161,11 @@ h1 {
 		margin: 0 0 7px 8px;
 	}
 	.points ul li {
-		padding: 0 0 5px 26px;
+		padding-top: 0;
 		position: relative;
 		}
 		.points ul li:before {
-			content: "";
-			width: 4px;
-			height: 4px;
-			border-radius: 50%;
 			background: #b8b8b8;
-			position: absolute;
-			top: 12px;
-			left: 10px;
 		}
 	ul.points_jobs li {
 		padding-bottom: 10px;
