@@ -1,0 +1,157 @@
+@charset "UTF-8";
+body, html {
+	height: 100%;
+	min-height: 100%;
+}
+
+.homepage {
+	background: #262729 url('../img/myspace.JPG') 0 0 no-repeat;
+	background-size: cover;
+	}
+	.homepage .paper {
+		background: url('../img/bg-repeat-2.png') 0 0 repeat-y;
+		margin: 0 0 0 30%;
+		padding: 1.5% 0 20px 9%;
+	}
+	.homepage .title {
+		 padding-top: 0;
+		 margin: 6% 0 25px 0;
+	 }
+
+.otherPages .paper {
+	background: #F7F7F7;
+	margin: 0;
+	padding: 8% 130px 6% 20%;
+	}
+	.otherPages .paper__projects {
+		padding-right: 40px;
+	}
+	.otherPages .paper__color {
+		background: #F0F0F0;
+	}
+	.paper_small {
+		padding:  0 5px 0 0;
+		max-width: 570px;
+	}
+	.paper_medium {
+		padding:  0 5px 0 0;
+		max-width: 865px;
+	}
+	.paper_wide {
+		padding-right: 40px;
+	}
+
+.otherPages .title {
+	padding-top: 0;
+	margin: 0 0 50px;
+	}
+
+.header {
+	overflow: hidden;
+	}
+	.otherPages .header {
+		width: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 1001;
+		background: #F7F7F7;
+		padding: 1.5% 40px;
+	}
+	.logo {
+		position: relative;
+		float: left;
+		height: 41px;
+		color: #DD3A3A;
+	}
+	.logo:hover::before {
+		display: block;
+		content: '';
+		width: 3px;
+		height: 3px;
+		border-radius: 50%;
+		background: #DD3A3A;
+		position: absolute;
+		left: 15px;
+		top: 15px;
+	}
+	.logo:hover::after {
+		display: block;
+		content: '';
+		width: 3px;
+		height: 3px;
+		border-radius: 50%;
+		background: #DD3A3A;
+		position: absolute;
+		left: 15px;
+		top: 22px;
+	}
+	.menu {
+		float: right;
+		margin: 0;
+		}
+		.menu_item {
+			display: inline-block;
+			margin-left: 20px;
+			line-height: 1.6;
+			}
+			.menu a:link, .menu a:visited {
+				color: #222;
+			}
+			.menu a:hover {
+				text-decoration: none;
+				color: #DD3A3A;
+			}
+		.menu_item-current {
+			border-bottom: 3px #DD3A3A solid;
+		}
+
+.homepage_wrap {
+	height: auto;
+	min-height: 100%;
+}
+.homepage_desc {
+	max-width: 570px;
+	padding-bottom: 70px;
+	font-weight: 300;
+}
+
+@media screen and (max-width:1280px) {
+	.otherPages .paper {
+		margin-left: 0;
+		padding-left: 9%;
+	}
+	.otherPages .header {
+		padding-left: 9%;
+	}
+}
+
+@media screen and (max-width:700px) {
+	.homepage .paper {
+		margin: 0;
+		padding: 4% 0 0 10px;
+	}
+	.otherPages .paper {
+		margin-left: 0;
+		padding-left: 10px;
+	}
+	.paper_small {
+		padding-right:  10px;
+	}
+	.paper_wide {
+		padding-right: 10px;
+	}
+	.otherPages .header {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width:575px) {
+	.otherPages .paper {
+		padding: 20% 0 0 10px;
+	}
+	.otherPages .title {
+		margin: 0 0 20px;
+	}
+}
