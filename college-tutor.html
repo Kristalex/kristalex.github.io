@@ -18,7 +18,7 @@
 	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
 	<script>
 		$(document).ready(function() {
-			$('#sidemenu a').click(function (event) {
+			$('#sidemenu a, #jumpToSolution').click(function (event) {
 				event.preventDefault();
 				var link = this;
 				$.smoothScroll({
@@ -70,6 +70,7 @@
 					conducted user research and competitive analysis, created a&nbsp;user journey map, MVP,
 					marketing plan, and the&nbsp;first design prototypes of&nbsp;the&nbsp;app.
 				</p>
+				<a class="borderButton" id="jumpToSolution" href="#solution">Jump to solution</a>
 			</div>
 
 			<div class="col-md-4 pl-5 brief"><div class="brief_wrap">
