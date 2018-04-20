@@ -83,10 +83,6 @@ a.borderButton:hover {
 .points {
 	border-top: 1px #D9D9D9 solid;
 	border-bottom: 1px #D9D9D9 solid;
-	padding-top: 30px;
-	padding-left: 40px;
-	padding-bottom: 30px;
-	margin: -35px 0 40px 0;
 	font-size: 15px;
 	}
 	.points_bold {
@@ -109,18 +105,19 @@ a.borderButton:hover {
 	ul.points_jobs li:before {
 		display: none;
 	}
+
 .textMe {
-	padding: 0 0 60px;
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 1.5;
 	}
 	.textMe_links {
-		margin: 0.8em 0 0 -3px;
+		margin: 0.8em 0 0 -6px;
 	}
-	.textMe a {
-		margin-right: 7px;
+	a.contactIcon {
+		margin: 0 3px;
 	}
-	.textMe a:hover {
+	a.contactIcon:hover {
 		opacity: 0.8;
+		text-decoration: none;
 	}
