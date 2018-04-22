@@ -6,10 +6,10 @@
 		margin: 0 0 15px;
 	}
 	.descProject .descProject_title {
-		font-size: 22px;
+		font-size: 27px;
 		font-weight: 600;
 		line-height: 1.4;
-		margin-bottom: 20px;
+		margin-bottom: 17px;
 	}
 
 .projectsBookmark {
@@ -55,7 +55,8 @@
 		color: #222;
 	}
 	.projects_title a:hover {
-		color: #1285C0;
+		color: #DD3A3A;
+		text-decoration: none;
 	}
 .projects_item .projects_date {
 	color: #A0A0A0;
@@ -72,10 +73,10 @@
 		position: absolute;
 		left: -20px;
 		top: 0;
-		color: #1285C0;
+		color: #238585;
 	}
 	.backLink a:visited {
-		color: #1285C0;
+		color: #238585;
 	}
 
 /** Project page **/
@@ -152,30 +153,6 @@
 	top: 0;
 	left: 0;
 }
-/*ol.flowList {
-	padding-top: 0px;
-	padding-left: 37px;
-	margin-left: -37px;
-	}
-	.flowList li {
-		position: relative;
-		padding: 10px 0 20px;
-		}
-		.flowList_number {
-			display: block;
-			position: absolute;
-			left: -37px;
-			top: 0;
-			width: 30px;
-			height: 30px;
-			background: #65B5B5;
-			background: #DD3A3A;
-			color: #fff;
-			font-size: 15px;
-			text-align: center;
-			line-height: 30px;
-			border-radius: 25px;
-		}*/
 
 .sideMenu {
 	position: fixed;
@@ -189,10 +166,14 @@
 		padding-right: 0;
 	}
 	.sideMenu li a:active, .sideMenu a:visited {
-		color: #1285C0;
+		color: #238585;
 	}
-	.sideMenu li a.active {
+	.sideMenu li a:hover {
+		text-decoration: underline;
+	}
+	.sideMenu li a.active, .sideMenu li a.active:hover {
 		color: #222;
+		text-decoration: none;
 	}
 
 @media screen and (max-width:1024px) {
