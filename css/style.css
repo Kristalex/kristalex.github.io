@@ -72,6 +72,7 @@ a.borderButton, a.borderButton:visited {
 	border-radius: 5px;
 	color: #DD3A3A;
 	transition-duration: 400ms;
+	font-weight: normal;
 }
 a.borderButton:hover {
 	color: #fff;
@@ -112,9 +113,12 @@ a.borderButton:hover {
 	line-height: 1.5;
 	}
 	.textMe_links {
-		margin: 0.8em 0 0 -6px;
+		margin: 0.8em 0 0 0;
 	}
-	a.contactIcon {
+	.textMe_links__home {
+		margin-left: -6px;
+	}
+	.textMe_links a.contactIcon {
 		margin: 0 3px;
 	}
 	a.contactIcon:hover {
