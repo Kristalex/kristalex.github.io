@@ -89,6 +89,7 @@ a.borderButton:hover {
 		font-weight: 700;
 	}
 	.points_title {
+		display: block;
 		margin: 0 0 7px 0;
 	}
 	.points ul {
