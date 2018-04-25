@@ -23,7 +23,7 @@ body, html {
 	}
 	.otherPages .paper {
 		margin: 0;
-		padding: 8% 130px 8% 20%;
+		padding: 6% 130px 6% 20%;
 	}
 	.otherPages .paper__top {
 		padding-top: 8%;
@@ -132,6 +132,7 @@ body, html {
 	.otherPages .paper {
 		margin-left: 0;
 		padding-top: 6%;
+		padding-bottom: 6%;
 		padding-left: 9%;
 	}
 	.otherPages .paper__top {
