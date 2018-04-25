@@ -27,6 +27,10 @@
 					scrollTarget: link.hash
 				});
 			});
+
+			$("[data-menu-burger]").click(function(){
+				$("html").toggleClass("menu-burger__html-overlay");
+			});
 		});
 	</script>
 
@@ -53,10 +57,11 @@
 			<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="24" alt="LinkedIn"></a>
 		</li>
 	</ul>
+	<div class="menu-burger__btn d-xs-inline-block d-sm-none" data-menu-burger=""><span></span></div>
 	<div class="logo"><a href="index.html"><img src="img/mylogo.png" width="133" alt="Kristina Alekseeva"></a></div>
 </div>
 
-<div class="paper" id="overview" style="position: relative;">
+<div class="paper paper__top" id="overview" style="position: relative;">
 
 	<nav id="sidemenu" class="d-none d-sm-block">
 		<ul class="sideMenu nav flex-column">
@@ -68,7 +73,7 @@
 	</nav>
 	<div class="paper_wide title">
 		<p class="backLink"><a href="projects.html">Back to projects</a></p>
-		<h1>From mission to solution</h1>
+		<h1>From mission to&nbsp;solution</h1>
 	</div>
 	<div class="content">
 		<div class="row">

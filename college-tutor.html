@@ -27,6 +27,10 @@
 					scrollTarget: link.hash
 				});
 			});
+
+			$("[data-menu-burger]").click(function(){
+				$("html").toggleClass("menu-burger__html-overlay");
+			});
 		});
 	</script>
 
@@ -43,7 +47,7 @@
 <body class="otherPages" data-spy="scroll" data-target="#sidemenu">
 
 <div class="header">
-	<ul class="menu">
+	<ul class="menu d-none d-sm-block">
 		<li class="menu_item"><a href="index.html">About</a></li>
 		<li class="menu_item menu_item-current"><a href="projects.html">Portfolio</a></li>
 		<li class="menu_item">
@@ -53,10 +57,13 @@
 			<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="24" alt="LinkedIn"></a>
 		</li>
 	</ul>
+
+	<div class="menu-burger__btn d-xs-inline-block d-sm-none" data-menu-burger=""><span></span></div>
+
 	<div class="logo"><a href="index.html"><img src="img/mylogo.png" width="133" alt="Kristina Alekseeva"></a></div>
 </div>
 
-<div class="paper" id="overview" style="position: relative;">
+<div class="paper paper__top" id="overview" style="position: relative;">
 
 	<nav id="sidemenu" class="d-none d-sm-block">
 		<ul class="sideMenu nav flex-column">
@@ -105,7 +112,7 @@
 
 <div class="paper paper__color" id="personas" style="position: relative;">
 	<div class="content productBlock">
-	<h2 style="margin: 0 0 50px;">Personas</h2>
+	<h2 class="mb-5">Personas</h2>
 	<div class="row">
 		<div class="persona col-md-5 col-sm-12 pr-4 offset-md-1 offset-sm-0 offset-xl-0">
 			<img class="persona_img" src="img/tutor/persona-1-min.png" width="120" height="120">
@@ -144,7 +151,7 @@
 
 <div class="paper" id="journey" style="position: relative;">
 	<div class="content productBlock">
-			<h2 style="margin: 0 0 50px;">User journey map</h2>
+			<h2 class="mb-5">User journey map</h2>
 
 
 			<div class="row">
@@ -158,7 +165,7 @@
 
 <div class="paper paper__color" id="solution" style="position: relative;">
 	<div class="content productBlock">
-		<h2 style="margin: 0 0 50px;">Solution</h2>
+		<h2 class="mb-5">Solution</h2>
 
 		<div class="row">
 			<div class="col-md-9">

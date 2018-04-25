@@ -12,6 +12,15 @@
 	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
 	<meta name="keywords" content="ux designer, portfolio, ux/ui design, ux designer seattle, ux designer portfolio">
 	<meta name="description" content="A portfolio of a UX Designer in Seattle">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("[data-menu-burger]").click(function(){
+				$("html").toggleClass("menu-burger__html-overlay");
+			});
+		});
+	</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117945022-1"></script>
@@ -37,6 +46,7 @@
 				<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="24" alt="LinkedIn"></a>
 			</li>
 		</ul>
+		<div class="menu-burger__btn d-xs-inline-block d-sm-none" data-menu-burger=""><span></span></div>
 		<div class="logo"><img src="img/mylogo.png" width="133" alt=""></div>
 	</div>
 	<h1 class="paper_small title">

@@ -11,6 +11,15 @@
 	<link href="css/projects.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("[data-menu-burger]").click(function(){
+				$("html").toggleClass("menu-burger__html-overlay");
+			});
+		});
+	</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117945022-1"></script>
@@ -35,10 +44,11 @@
 			<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="24" alt="LinkedIn"></a>
 		</li>
 	</ul>
+	<div class="menu-burger__btn d-xs-inline-block d-sm-none" data-menu-burger=""><span></span></div>
 	<div class="logo"><a href="index.html"><img src="img/mylogo.png" width="133" alt="Kristina Alekseeva"></a></div>
 </div>
 
-<div class="paper paper__noSideMenu">
+<div class="paper paper__noSideMenu paper__top">
 	<div class="paper_wide title">
 		<p class="backLink"><a href="projects.html">Back to projects</a></p>
 		<h1>CRM for delivery company</h1>
