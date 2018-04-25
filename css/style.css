@@ -83,25 +83,34 @@ a.borderButton:hover {
 	border-top: 1px #D9D9D9 solid;
 	border-bottom: 1px #D9D9D9 solid;
 	font-size: 15px;
+	line-height: 1.6;
 	}
 	.points_bold {
 		font-weight: 700;
 	}
 	.points_title {
-		margin: 0 0 7px 8px;
+		margin: 0 0 7px 0;
 	}
 	.points ul {
 		margin-bottom: 0;
+		margin-left: -8px;
 		}
 		.points ul li {
 			padding-top: 0;
+			padding-bottom: 7px;
 			position: relative;
 			}
 			.points ul li:before {
 				background: #b8b8b8;
 			}
+	ul.points_jobs {
+		margin-left: 0;
+	}
+	ul.points_jobs .points_title {
+		margin-bottom: 5px;
+	}
 	ul.points_jobs li {
-		padding-bottom: 10px;
+		padding-bottom: 12px;
 		padding-left: 0;
 	}
 	ul.points_jobs li:before {
