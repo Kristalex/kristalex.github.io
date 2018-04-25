@@ -183,6 +183,9 @@ body, html {
 }
 
 @media screen and (max-width:575px) {
+	.otherPages .paper {
+		padding-right: 15px;
+	}
 	.otherPages .paper__top {
 		padding-top: 75px;
 	}
