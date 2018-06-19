@@ -104,19 +104,6 @@ a.borderButton:hover {
 			.points ul li:before {
 				background: #b8b8b8;
 			}
-	ul.points_jobs {
-		margin-left: 0;
-	}
-	ul.points_jobs .points_title {
-		margin-bottom: 5px;
-	}
-	ul.points_jobs li {
-		padding-bottom: 12px;
-		padding-left: 0;
-	}
-	ul.points_jobs li:before {
-		display: none;
-	}
 
 .textMe {
 	font-size: 24px;
