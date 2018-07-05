@@ -128,6 +128,9 @@
 .prototypeComment {
 		font-size: 15px;
 	}
+	.prototypeComment p {
+		margin-bottom: 5px;
+	}
 
 .flowList {
 	position: relative;
