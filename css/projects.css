@@ -28,6 +28,17 @@
 }
 .projects_item_img {
 	margin: 0 0 0 -15px;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.projects_item_img:hover {
+	width: 130px;
+	height: 130px;
+	margin-top: -10px;
 }
 .projects_item .projects_title {
 	font-size: 22px;
@@ -39,9 +50,10 @@
 	}
 	.projects_title a:link, .projects_title a:visited {
 		color: #222;
+		text-decoration: underline;
 	}
 	.projects_title a:hover {
-		color: #DD3A3A;
+		color: #222;
 		text-decoration: none;
 	}
 .projects_item .projects_date {
@@ -59,10 +71,10 @@
 		position: absolute;
 		left: -20px;
 		top: 0;
-		color: #238585;
+		color: #188ba8;
 	}
 	.backLink a:visited {
-		color: #238585;
+		color: #188ba8;
 	}
 
 /** Project page **/
