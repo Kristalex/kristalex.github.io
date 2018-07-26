@@ -177,6 +177,10 @@
 		text-decoration: none;
 	}
 
+.ekko-lightbox-nav-overlay a {
+	color: #222!important;
+}
+
 @media screen and (max-width:1024px) {
 	.projects_item {
 		padding: 0px 7% 0 0;

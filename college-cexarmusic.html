@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Video/photographer desktop & mobile website  — Kristina Alekseeva</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<script src="js/ekko-lightbox.min.js"></script>
+	<link href="css/reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/projects.css" rel="stylesheet" type="text/css">
+	<link href="css/ekko-lightbox.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+	<meta name="keywords" content="ux designer, portfolio, ux/ui design, ux designer seattle, ux designer portfolio, mobile design, user-centered design, personas, user story map">
+	<meta name="description" content="Desktop and mobile portfolio website for videographer and photographer">
+
+	<script>
+		$(document).ready(function() {
+			$('#sidemenu a, #jumpToSolution').click(function (event) {
+				event.preventDefault();
+				var link = this;
+				$.smoothScroll({
+					scrollTarget: link.hash
+				});
+			});
+
+			$("[data-menu-burger]").click(function(){
+				$("html").toggleClass("menu-burger__html-overlay");
+			});
+
+			$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+				event.preventDefault();
+				$(this).ekkoLightbox({
+
+				});
+			});
+		});
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117945022-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-117945022-1');
+	</script>
+</head>
+<body class="otherPages" data-spy="scroll" data-target="#sidemenu">
+
+<div class="header">
+	<ul class="menu d-none d-sm-block">
+		<li class="menu_item"><a href="index.html">Home</a></li>
+		<li class="menu_item menu_item-current"><a href="projects.html">Portfolio</a></li>
+		<li class="menu_item">
+			<a class="contactIcon" href="https://www.linkedin.com/in/alekseevakristina" target="_blank"><img src="img/linkedIn.png" width="24" alt="LinkedIn"></a>
+		</li>
+		<li class="menu_item" style="margin-left: 5px;">
+			<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="24" alt="LinkedIn"></a>
+		</li>
+	</ul>
+
+	<div class="menu-burger__btn d-xs-inline-block d-sm-none" data-menu-burger=""><span></span></div>
+
+	<div class="logo"><a href="index.html"><img src="img/mylogo.png" width="133" alt="Kristina Alekseeva"></a></div>
+</div>
+
+<div class="paper paper__top" id="overview" style="position: relative;">
+
+	<nav id="sidemenu" class="d-none d-sm-block">
+		<ul class="sideMenu nav flex-column">
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#personas">Personas</a></li>
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#storymap">Story map</a></li>
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#wireframes">Wireframes</a></li>
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#design">Design</a></li>
+		</ul>
+	</nav>
+	<div class="paper_wide title">
+		<p class="backLink"><a href="projects.html">Back to projects</a></p>
+		<h1>Video/photographer website</h1>
+	</div>
+	<div class="content">
+		<div class="row">
+			<div class="col-xl-4 col-lg-4 col-md-4 pl-md-5 pl-sm-3 order-md-2 order-sm-1 mb-4 brief"><div class="brief_wrap">
+				<p class="brief_title">Type</p>
+				<p>College project</p>
+				<p class="brief_title">Role</p>
+				<p>UI/UX&nbsp;Designer, UX&nbsp;Researcher, Product Owner</p>
+				<p class="brief_title">Timeline</p>
+				<p>Mar 2018 - Current</p>
+			</div></div>
+
+			<div class="col-md-7 order-md-1 order-sm-2">
+				<p>
+					The product is a portfolio website for a videographer/photographer.
+				</p>
+				<p>
+					After competitive research, the goal was to make this website stand out
+					among so many others. Most of the websites were overloaded with information and graphics.
+					Many didn't have clear pricing.
+				</p>
+				<p>
+					I talked to previous clients and it became more clear what kind of users needed
+					this website, how they behaved, and what kind of info was necessary for them.
+					That allowed to create personas and a user story map.
+				</p>
+				<p>
+					The project is still going on and now it's on the stage of ux writing.
+				</p>
+				<a class="borderButton" id="jumpToSolution" href="#wireframes">Jump to solution</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="paper paper__color" id="personas" style="position: relative;">
+	<div class="content productBlock">
+	<h2 class="mb-5">Personas</h2>
+	<div class="row">
+		<div class="persona col-xl-4 col-md-6 col-sm-12 pr-4 pb-4">
+			<img class="persona_img" src="img/cexarmusic/persona-1-min.png" width="120" height="120">
+			<p class="persona_title">Peter</p>
+			<ul class="g-list" style="clear: both;">
+				<li>Party promoter and organizer.</li>
+				<li>Communicates with lots of people and has a&nbsp;lot of things on&nbsp;his mind at&nbsp;once.</li>
+				<li>Usually does not have time to search for people on the Internet and go through their&nbsp;portfolios.</li>
+				<li>
+					Finds people through recommendations and gives them a&nbsp;shot to see if that works for&nbsp;him.
+				</li>
+			</ul>
+		</div>
+		<div class="persona col-xl-4 col-md-6 col-sm-12 pl-4 pb-4">
+			<img class="persona_img" src="img/cexarmusic/persona-2-min.png" width="120" height="120">
+
+			<p class="persona_title">Michael</p>
+			<ul class="g-list">
+				<li>
+					Musician, plays in a&nbsp;band.</li>
+				<li>
+					From time to time, needs a&nbsp;professional to promote his&nbsp;band.
+				</li>
+				<li>When he chooses a professional,
+					he goes deep in their portfolios watching their videos and reading about them.</li>
+				<li>Uses YouTube, SunCloud, all social networks: Facebook, Instagram, Twitter.</li>
+
+			</ul>
+		</div>
+		<div class="persona col-xl-4 col-md-6 col-sm-12 pl-4">
+			<img class="persona_img" src="img/cexarmusic/persona-3-min.png" width="120" height="120">
+
+			<p class="persona_title">Barbara</p>
+			<ul class="g-list">
+				<li>
+					Bride, getting married in 6 months and she wants create the&nbsp;wedding of her&nbsp;dreams.
+				</li>
+				<li>
+					Needs to feel comfortable on&nbsp;her&nbsp;wedding.
+				</li>
+				<li>
+					Follows wedding photographers and videographers on the Instagram to get to know what she&nbsp;wants.
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="paper" id="storymap" style="position: relative;">
+	<div class="content productBlock">
+		<h2 class="mb-5">User story map</h2>
+		<div class="row">
+			<div class="col-xl-10 col-md-11 col-sm-12">
+				<img src="img/cexarmusic/user_story_map-min.png" width="100%">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="paper" id="wireframes" style="position: relative;">
+	<div class="content productBlock">
+		<h2 class="mb-4">Wireframes</h2>
+		<div class="row">
+
+			<div class="w-100"></div>
+			<a href="img/cexarmusic/Home-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery" class="col-xl-3 col-md-4 col-sm-6 pb-4">
+				<img src="img/cexarmusic/Home-min.png" class="img-fluid">
+			</a>
+			<a href="img/cexarmusic/Video-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery" class="col-xl-3 col-md-4 col-sm-6 pb-4">
+				<img src="img/cexarmusic/Video-min.png" class="img-fluid">
+			</a>
+			<a href="img/cexarmusic/Video-lb-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery" class="col-xl-3 col-md-4 col-sm-6 pb-4">
+				<img src="img/cexarmusic/Video-lb-min.png" class="img-fluid">
+			</a>
+
+			<div class="w-100 d-xl-block d-md-none d-sm-none d-xs-none"></div>
+
+			<a href="img/cexarmusic/Pricing-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery" class="col-xl-3 col-md-4 col-sm-6 pb-4">
+				<img src="img/cexarmusic/Pricing-min.png" class="img-fluid">
+			</a>
+			<a href="img/cexarmusic/Contact-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery" class="col-xl-3 col-md-4 col-sm-6 pb-4">
+				<img src="img/cexarmusic/Contact-min.png" class="img-fluid">
+			</a>
+			<a href="img/cexarmusic/About-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery" class="col-xl-3 col-md-4 col-sm-6 pb-4">
+				<img src="img/cexarmusic/About-min.png" class="img-fluid">
+			</a>
+
+			<div class="w-100"></div>
+
+			<a href="img/cexarmusic/m_Home-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery" class="col-xl-2 col-md-3 col-sm-6 col-xs-6 mb-4">
+				<img src="img/cexarmusic/m_Home_h-min.png" class="img-fluid">
+			</a>
+			<a href="img/cexarmusic/m_Video-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery" class="col-xl-2 col-md-3 col-sm-6 col-xs-6 mb-4">
+				<img src="img/cexarmusic/m_Video_h-min.png" class="img-fluid">
+			</a>
+			<a href="img/cexarmusic/m_About-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery" class="col-xl-2 col-md-3 col-sm-6 col-xs-6 mb-4">
+				<img src="img/cexarmusic/m_About_h-min.png" class="img-fluid">
+			</a>
+
+			<a href="img/cexarmusic/m_Video-lb-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery" class="col-xl-2 col-md-3 col-sm-6 col-xs-6 mb-4">
+				<img src="img/cexarmusic/m_Video-lb-min.png" class="img-fluid">
+			</a>
+		</div>
+
+	</div>
+</div>
+
+<div class="paper paper__color" id="design" style="position: relative;">
+	<div class="content productBlock">
+		<h2 class="mb-5">Visual design</h2>
+
+		<div class="row">
+			<a href="img/cexarmusic/Home_d-min.png" data-toggle="lightbox" data-gallery="design-gallery" class="col-xl-5 col-md-5 col-sm-6 col-xs-6 mb-4">
+				<img src="img/cexarmusic/Home_d-min.png" class="img-fluid">
+			</a>
+			<a href="img/cexarmusic/Video_d-min.png" data-toggle="lightbox" data-gallery="design-gallery" class="col-xl-5 col-md-5 col-sm-6 col-xs-6 mb-4">
+				<img src="img/cexarmusic/Video_d-min.png" class="img-fluid">
+			</a>
+			<a href="img/cexarmusic/About_d-min.png" data-toggle="lightbox" data-gallery="design-gallery" class="col-xl-5 col-md-5 col-sm-6 col-xs-6 mb-4">
+				<img src="img/cexarmusic/About_d-min.png" class="img-fluid">
+			</a>
+			<div class="col-xl-5 col-md-5 col-sm-6 col-xs-6 mb-4">
+				<div class="row">
+					<a href="img/cexarmusic/m_Home_d-min.png" data-toggle="lightbox" data-gallery="design-gallery" class="col-xl-5 col-md-5 col-sm-6 col-xs-6 mb-4">
+						<img src="img/cexarmusic/m_Home_d_h-min.png" class="img-fluid">
+					</a>
+					<a href="img/cexarmusic/m_menu-min.png" data-toggle="lightbox" data-gallery="design-gallery" class="col-xl-5 col-md-5 col-sm-6 col-xs-6 mb-4">
+						<img src="img/cexarmusic/m_menu-min.png" class="img-fluid">
+					</a>
+					<a href="img/cexarmusic/m_photo_d-min.png" data-toggle="lightbox" data-gallery="design-gallery" class="col-xl-5 col-md-5 col-sm-6 col-xs-6 mb-4">
+						<img src="img/cexarmusic/m_photo_d_h-min.png" class="img-fluid">
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="footer py-4">
+	<p class="mb-2">Contact Kristina</p>
+	<p class="textMe_links">
+		<a class="contactIcon" href="https://www.linkedin.com/in/alekseevakristina" target="_blank"><img src="img/linkedIn.png" width="40" alt="LinkedIn"></a>
+		<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="40" alt="LinkedIn"></a>
+	</p>
+</div>
+
+</body>
+</html>
