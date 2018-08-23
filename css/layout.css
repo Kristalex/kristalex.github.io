@@ -4,22 +4,20 @@ body, html {
 	min-height: 100%;
 }
 
+.homepage .paper {
+	background: url('../img/bg-repeat-2.png') 0 0 repeat-y;
+	margin: 0 0 0 30%;
+	padding: 1.5% 0 20px 9%;
+}
 .homepage {
+	background: #262729 url('../img/myspace-bw-min.png') 0 0 no-repeat;
 	background-size: cover;
-	}
-	.homepage .paper {
-		background: url('../img/bg-repeat-2.png') 0 0 repeat-y;
-		margin: 0 0 0 30%;
-		padding: 1.5% 0 20px 9%;
-	}
-	.homepage {
-		background: #262729 url('../img/myspace-bw-min.png') 0 0 no-repeat;
-	}
-	.homepage .title {
-		font-size: 46px;
-	 	padding-top: 0;
-	 	margin: 10% 0 25px 0;
-	}
+}
+.homepage .title {
+	font-size: 46px;
+	padding-top: 0;
+	margin: 10% 0 25px 0;
+}
 
 .otherPages {
 	background: #F7F7F7;
