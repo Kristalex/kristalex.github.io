@@ -14,9 +14,10 @@ body, html {
 		padding: 1.5% 0 20px 9%;
 	}
 	.homepage .title {
-		 padding-top: 0;
-		 margin: 6% 0 25px 0;
-	 }
+		font-size: 46px;
+	 	padding-top: 0;
+	 	margin: 10% 0 25px 0;
+	}
 
 .otherPages {
 	background: #F7F7F7;
@@ -26,7 +27,7 @@ body, html {
 		padding: 6% 130px 6% 20%;
 	}
 	.otherPages .paper__top {
-		padding-top: 8%;
+		padding-top: 10%;
 	}
 	.otherPages .paper__projects {
 		padding-right: 40px;
@@ -136,7 +137,7 @@ body, html {
 		padding-left: 9%;
 	}
 	.otherPages .paper__top {
-		padding-top: 8%;
+		padding-top: 10%;
 	}
 	.otherPages .paper__projects {
 		padding-left: 9%;

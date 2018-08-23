@@ -6,6 +6,9 @@ body {
 	line-height: 1.8;
 	color: #222;
 }
+.content {
+	font-weight: 300;
+}
 a:link {
 	color: #188ba8;
 	text-decoration: none;
@@ -44,21 +47,24 @@ ol.g-list {
 }
 h1 {
 	font-size: 40px;
-	font-weight: 600;
-	margin: 0 0 25px;
+	font-weight: 300;
 }
 .g-h2 {
-	font-size: 24px;
-	font-weight: 600;
+	font-size: 34px;
+	font-weight: 300;
 	line-height: 1.4;
-	margin: 20px 0 15px;
 }
 .g-h3 {
-	margin: 0 0 20px;
+	font-size: 24px;
+	line-height: 1.4;
+	font-weight: 400;
+}
+.g-h4 {
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 1.4;
 }
+
 
 a.borderButton, a.borderButton:visited {
 	display: inline-block;
@@ -81,16 +87,16 @@ a.borderButton:hover {
 
 .points {
 	border-top: 1px #D9D9D9 solid;
-	border-bottom: 1px #D9D9D9 solid;
-	font-size: 15px;
-	line-height: 1.6;
+	font-size: 17px;
+	/*line-height: 1.6;*/
+	font-weight: 300;
 	}
 	.points_bold {
 		font-weight: 700;
 	}
 	.points_title {
 		display: block;
-		margin: 0 0 7px 0;
+		margin: 0 0 10px 0;
 	}
 	.points ul {
 		margin-bottom: 0;
@@ -98,7 +104,7 @@ a.borderButton:hover {
 		}
 		.points ul li {
 			padding-top: 0;
-			padding-bottom: 7px;
+			padding-bottom: 10px;
 			position: relative;
 			}
 			.points ul li:before {
