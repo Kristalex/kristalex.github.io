@@ -14,9 +14,10 @@ body, html {
 	background-size: cover;
 }
 .homepage .title {
+	/*font-family: 'Quicksand';*/
 	font-size: 46px;
-	padding-top: 0;
-	margin: 10% 0 25px 0;
+	font-weight: 300;
+	margin: 15% 0 0 0;
 }
 
 .otherPages {
@@ -27,7 +28,10 @@ body, html {
 		padding: 6% 14%;
 	}
 	.otherPages .paper__top {
-		padding-top: 10%;
+		padding-top: 12%;
+	}
+	.otherPages .paper__projects {
+		padding-top: 12%;
 	}
 	.otherPages .paper__color {
 		background: #F0F0F0;
@@ -48,8 +52,11 @@ body, html {
 	}
 
 .otherPages .title {
-	padding-top: 0;
-	margin: 0 0 30px;
+	position: relative;
+	/*font-family: 'Quicksand';*/
+	font-size: 46px;
+	font-weight: 300;
+	margin-left: -4px;
 	}
 
 .header {
@@ -135,12 +142,10 @@ body, html {
 		padding-right: 6%;
 	}
 	.otherPages .paper__top {
-		padding-top: 10%;
+		padding-top: 14%;
 	}
 	.otherPages .paper__projects {
-		padding-top: 10%;
-		padding-left: 6%;
-		padding-right: 6%;
+		padding-top: 15%;
 	}
 	.otherPages .paper__noSideMenu {
 		padding-right: 9%;
@@ -163,10 +168,10 @@ body, html {
 		padding-right: 15px;
 	}
 	.otherPages .paper__top {
-		padding-top: 12%;
+		padding-top: 15%;
 	}
-	.otherPages .paper__noSideMenu {
-		padding-right: 15px;
+	.otherPages .paper__sideMenu {
+		padding-right: 140px;
 	}
 	.paper_small {
 		padding-right:  15px;
@@ -178,11 +183,17 @@ body, html {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.otherPages .title {
+		font-size: 40px;
+	}
 }
 
 @media screen and (max-width:575px) {
 	.otherPages .paper__top {
 		padding-top: 75px;
+	}
+	.otherPages .paper__sideMenu {
+		padding-right: 15px;
 	}
 	.otherPages .title {
 		margin: 0 0 20px;
