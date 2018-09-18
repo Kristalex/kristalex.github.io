@@ -24,13 +24,10 @@ body, html {
 	}
 	.otherPages .paper {
 		margin: 0;
-		padding: 6% 130px 6% 20%;
+		padding: 6% 14%;
 	}
 	.otherPages .paper__top {
 		padding-top: 10%;
-	}
-	.otherPages .paper__projects {
-		padding-right: 40px;
 	}
 	.otherPages .paper__color {
 		background: #F0F0F0;
@@ -134,20 +131,23 @@ body, html {
 		margin-left: 0;
 		padding-top: 6%;
 		padding-bottom: 6%;
-		padding-left: 9%;
+		padding-left: 6%;
+		padding-right: 6%;
 	}
 	.otherPages .paper__top {
 		padding-top: 10%;
 	}
 	.otherPages .paper__projects {
-		padding-left: 9%;
 		padding-top: 10%;
+		padding-left: 6%;
+		padding-right: 6%;
 	}
 	.otherPages .paper__noSideMenu {
 		padding-right: 9%;
 	}
 	.otherPages .header {
-		padding-left: 9%;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
 
@@ -160,14 +160,10 @@ body, html {
 	.otherPages .paper {
 		margin-left: 0;
 		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.otherPages .paper__top {
 		padding-top: 12%;
-	}
-	.otherPages .paper__projects {
-		padding-top: 12%;
-		padding-right: 15px;
-		padding-left: 15px;
 	}
 	.otherPages .paper__noSideMenu {
 		padding-right: 15px;
@@ -185,9 +181,6 @@ body, html {
 }
 
 @media screen and (max-width:575px) {
-	.otherPages .paper {
-		padding-right: 15px;
-	}
 	.otherPages .paper__top {
 		padding-top: 75px;
 	}

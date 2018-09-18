@@ -64,6 +64,13 @@ h1 {
 	font-weight: 600;
 	line-height: 1.4;
 }
+.g-capstitle {
+	font-size: 17px;
+	font-weight: 600;
+}
+.g-lightFont {
+	font-weight: 300;
+}
 
 
 a.borderButton, a.borderButton:visited {
