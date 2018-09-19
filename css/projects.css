@@ -97,26 +97,6 @@
 		font-weight: bold;
 	}
 
-.stages {
-		line-height: 1.4;
-	}
-	.stages_title {
-		background: #DD3A3A;
-		color: #fff;
-		text-align: center;
-		padding: 12px 15px;
-		border-radius: 4px;
-		margin: 25px 0 25px;
-	}
-	.stages_title__grey {
-		background: #b8b8b8;
-		line-height: 1.4;
-	}
-	.stages p {
-		text-align: center;
-		margin: 0 0 20px;
-	 }
-
 .prototypeComment {
 	font-size: 15px;
 	}
