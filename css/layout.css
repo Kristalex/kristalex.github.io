@@ -29,9 +29,6 @@ body, html {
 	.otherPages .paper__top {
 		padding-top: 12%;
 	}
-	.otherPages .paper__projects {
-		padding-top: 12%;
-	}
 	.otherPages .paper__color {
 		background: #F0F0F0;
 	}
@@ -144,10 +141,7 @@ body, html {
 		padding-right: 6%;
 	}
 	.otherPages .paper__top {
-		padding-top: 15%;
-	}
-	.otherPages .paper__projects {
-		padding-top: 15%;
+		padding-top: 13%;
 	}
 	.otherPages .paper__noSideMenu {
 		padding-right: 9%;
@@ -178,7 +172,7 @@ body, html {
 		padding-right: 15px;
 	}
 	.otherPages .paper__top {
-		padding-top: 15%;
+		padding-top: 16%;
 	}
 	.otherPages .paper__sideMenu {
 		padding-right: 140px;
