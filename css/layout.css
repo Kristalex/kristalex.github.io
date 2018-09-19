@@ -36,6 +36,10 @@ body, html {
 	.otherPages .paper__color {
 		background: #F0F0F0;
 	}
+	.otherPages .paper__white {
+		background: #fff;
+		}
+
 	.otherPages .paper__noSideMenu {
 		padding-right: 20%;
 	}
