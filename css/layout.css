@@ -10,7 +10,7 @@ body, html {
 	padding: 1% 0 20px 9%;
 }
 .homepage {
-	background: #262729 url('../img/myspace-bw-min.jpg') 0 0 no-repeat;
+	background: #262729 url('../img/myspace-bw-min.png') 0 0 no-repeat;
 	background-size: cover;
 }
 .homepage .title {
