@@ -42,6 +42,9 @@ ol.g-list {
 		padding: 0 0 15px 0;
 		list-style: decimal;
 	}
+	ol.g-list__s li {
+		padding: 0 0 5px 0;
+	}
 .nowrap {
 	white-space: nowrap;
 }
