@@ -7,7 +7,7 @@ body, html {
 .homepage .paper {
 	background: url('../img/bg-repeat-2.png') 0 0 repeat-y;
 	margin: 0 0 0 30%;
-	padding: 1.5% 0 20px 9%;
+	padding: 1% 0 20px 9%;
 }
 .homepage .title {
 	font-size: 46px;
@@ -67,7 +67,7 @@ body, html {
 		top: 0;
 		z-index: 1001;
 		background: #F7F7F7;
-		padding: 1.5% 40px;
+		padding: 1% 40px;
 	}
 	.logo {
 		position: relative;
@@ -99,7 +99,7 @@ body, html {
 	}
 	.menu {
 		float: right;
-		margin: 0;
+		margin: 4px 0 0;
 		}
 		.menu_item {
 			display: inline-block;
@@ -151,6 +151,14 @@ body, html {
 	.otherPages .header {
 		padding-left: 40px;
 		padding-right: 40px;
+	}
+
+	.otherPages .header {
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+	.homepage .paper {
+		padding-top: 9px;
 	}
 }
 
