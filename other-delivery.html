@@ -21,11 +21,28 @@
 	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<script src="js/ekko-lightbox.min.js"></script>
 
 	<script>
 		$(document).ready(function() {
+			$('#sidemenu a, #jumpToSolution').click(function (event) {
+				event.preventDefault();
+				var link = this;
+				$.smoothScroll({
+					scrollTarget: link.hash
+				});
+			});
+
 			$("[data-menu-burger]").click(function(){
 				$("html").toggleClass("menu-burger__html-overlay");
+			});
+
+			$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+				event.preventDefault();
+				$(this).ekkoLightbox({
+				});
 			});
 		});
 	</script>
@@ -48,6 +65,16 @@
 </div>
 
 <div class="paper paper__top paper__white content">
+	<nav id="sidemenu" class="d-none d-sm-block">
+		<ul class="sideMenu nav flex-column">
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#personas">Persona</a></li>
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#storymap">Story map</a></li>
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#solution">Solution</a></li>
+		</ul>
+	</nav>
+
+
 	<div class="row">
 		<div class="col-xl-7 col-md-8 mx-auto">
 			<p class="backLink"><a href="projects.html#otherProjects">Back to projects</a></p>
@@ -60,7 +87,7 @@
 			<div class="brief mb-5"><div class="row">
 				<div class="col-md-4">
 					<p class="brief_title">Type</p>
-					<p>Short-term project</p>
+					<p>Freelance project</p>
 				</div>
 				<div class="col-md-4">
 					<p class="brief_title">Role</p>
@@ -73,19 +100,84 @@
 			</div></div>
 
 			<p>
-				It's a&nbsp;startup about delivering from different shops. I&nbsp;made an&nbsp;interface for a&nbsp;manager
-				who tracks a&nbsp;delivery process.
-				The&nbsp;main scenario is to&nbsp;watch how everything is&nbsp;going and to&nbsp;reveal problems.
-				The&nbsp;manager also can edit couriers and&nbsp;shops.
+				The project was a startup. The client was a delivery company to be. They wanted to deliver
+				products from pharmacies to customers.
+				To do that, they were going to&nbsp;create an app for pharmacies to&nbsp;places their delivery orders
+				and to hire couriers-contractors to&nbsp;deliver.
+			</p>
+			<p>
+				My job was to create a CRM to manage the whole delivery process.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="paper paper__sideMenu content" id="personas" style="position: relative;">
+	<h2 class="mb-5 g-h2 text-center">Persona</h2>
+	<div class="row">
+		<div class="col-xl-7 col-md-8 mx-auto">
+			<div class="row">
+				<div class="persona col-md-12 col-sm-12 text-center">
+					<div class="persona_in">
+						<img class="persona_img" src="img/delivery/persona.png" width="120" height="120">
+						<p class="g-h3">Mark Katz</p>
+						<ul class="g-list text-left" style="clear: both;">
+							<li>The only manager.</li>
+							<li>Works from 9am to 6pm in the office or at home, and on the weekends when needed.</li>
+							<li>Responsible for maintaining delivery, couriers, and stores data.</li>
+							<li>Not too tech-savvy. Great at speaking to people.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="paper paper__color paper__sideMenu content" id="storymap" style="position: relative;">
+	<h2 class="g-h2 mb-5 text-center">User story map</h2>
+
+	<div class="row">
+		<div class="col-xl-7 col-md-10 mx-auto">
+			<img src="img/delivery/storymap.png" width="100%" alt="">
+		</div>
+	</div>
+</div>
+
+<div class="paper content" id="solution" style="position: relative;">
+	<div class="row">
+		<div class="col-xl-7 col-md-8 mx-auto">
+			<h2 class="g-h2 mb-4">Solution</h2>
+			<p>Due to the limited amount of time and budget, I&nbsp;didn't have a&nbsp;chance to conduct
+				proper research and usability testing.
+				I&nbsp;designed wireframes based on the main user stories and a&nbsp;business&nbsp;model.
 			</p>
 		</div>
 
 		<div class="w-100"></div>
 
-		<div class="col-xl-10 mt-5 mx-auto"><div style="border: 1px #E4E4E4 solid;">
-			<iframe src="https://marvelapp.com/2776c64?emb=1" width="100%" height="800" allowtransparency="true" frameborder="0"></iframe>
-		</div></div>
+		<div class="col-xl-10 mx-auto pt-4">
+			<div class="row">
+				<a class="col-xl-6 my-3" href="img/delivery/Orders.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/delivery/Orders.png" class="img-fluid">
+				</a>
+				<a class="col-xl-6 my-3" href="img/delivery/Couriers.png" data-toggle="lightbox" data-gallery="wireframes-gallery"">
+				<img src="img/delivery/Couriers.png" class="img-fluid">
+				</a>
+				<a class="col-xl-6 my-3" href="img/delivery/Courier.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/delivery/Courier.png" class="img-fluid">
+				</a>
+
+				<a class="col-xl-6 my-3" href="img/delivery/Courier-orders.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/delivery/Courier-orders.png" class="img-fluid">
+				</a>
+				<a class="col-xl-6 my-3" href="img/delivery/Stores.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/delivery/Stores.png" class="img-fluid">
+				</a>
+			</div>
+		</div>
 	</div>
+
 </div>
 
 <div class="footer py-4">
