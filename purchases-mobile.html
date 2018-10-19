@@ -12,22 +12,32 @@
 	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="ux designer, portfolio, ux/ui design, ux designer seattle, ux designer portfolio, mobile design">
+	<meta name="description" content="Mobile version of a website">
 	<title>Portfolio - Tutor Helper mobile app — Kristina Alekseeva</title>
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+
 	<link href="css/reset.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link href="css/layout.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/projects.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900" rel="stylesheet">
-	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
-	<meta name="keywords" content="ux designer, portfolio, ux/ui design, ux designer seattle, ux designer portfolio, mobile design">
-	<meta name="description" content="Mobile version of a website">
+	<link href="css/ekko-lightbox.css" rel="stylesheet" type="text/css">
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/ekko-lightbox.min.js"></script>
 
 	<script>
 		$(document).ready(function() {
 			$("[data-menu-burger]").click(function(){
 				$("html").toggleClass("menu-burger__html-overlay");
+			});
+
+			$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+				event.preventDefault();
+				$(this).ekkoLightbox();
 			});
 		});
 	</script>
@@ -75,41 +85,63 @@
 		<div class="col-xl-10 mx-auto pt-4">
 			<div class="row">
 				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/main_site-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
+					<a href="img/purchases-mobile/main_site-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/main_site-min.png" class="img-fluid imgBorder">
+					</a>
 				</div>
 				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/menu-enter-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
+					<a href="img/purchases-mobile/menu-enter-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/menu-enter-min.png" class="img-fluid imgBorder">
+					</a>
 				</div>
 				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/news-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
+					<a href="img/purchases-mobile/news-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/news-min.png" class="img-fluid imgBorder">
+					</a>
 				</div>
 				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/news_rubric-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
-				</div>
-
-
-				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/form_search-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
-				</div>
-				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/form_opened_search-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
-				</div>
-				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/region_chosen_search-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
-				</div>
-				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/saved_searches-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
+					<a href="img/purchases-mobile/news_rubric-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/news_rubric-min.png" class="img-fluid imgBorder">
+					</a>
 				</div>
 
 
 				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/saved_searches_choice-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
+					<a href="img/purchases-mobile/form_search-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/form_search-min.png" class="img-fluid imgBorder">
+					</a>
 				</div>
 				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/page_purchase-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
+					<a href="img/purchases-mobile/form_opened_search-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/form_opened_search-min.png" class="img-fluid imgBorder">
+					</a>
 				</div>
 				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
-					<img src="img/purchases-mobile/fav_favourites-min.png" width="100%" style="border: 1px #E4E4E4 solid;">
+					<a href="img/purchases-mobile/region_chosen_search-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/region_chosen_search-min.png" class="img-fluid imgBorder">
+					</a>
+				</div>
+				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+					<a href="img/purchases-mobile/saved_searches-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/saved_searches-min.png" class="img-fluid imgBorder">
+					</a>
+				</div>
+
+
+				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+					<a href="img/purchases-mobile/saved_searches_choice-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/saved_searches_choice-min.png" class="img-fluid imgBorder">
+					</a>
+				</div>
+				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+					<a href="img/purchases-mobile/page_purchase-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/page_purchase-min.png" class="img-fluid imgBorder">
+					</a>
+				</div>
+				<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+					<a href="img/purchases-mobile/fav_favourites-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+						<img src="img/purchases-mobile/fav_favourites-min.png" class="img-fluid imgBorder">
+					</a>
 				</div>
 
 			</div>

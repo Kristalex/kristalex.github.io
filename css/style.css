@@ -75,6 +75,10 @@ h1 {
 	font-weight: 300;
 }
 
+.imgBorder {
+	border: 1px #EDEDED solid;
+}
+
 
 a.borderButton, a.borderButton:visited {
 	display: inline-block;
