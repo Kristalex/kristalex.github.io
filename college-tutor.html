@@ -17,11 +17,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="js/jquery.smooth-scroll.js"></script>
+	<script src="js/ekko-lightbox.min.js"></script>
 	<link href="css/reset.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link href="css/layout.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/projects.css" rel="stylesheet" type="text/css">
+	<link href="css/ekko-lightbox.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
 	<meta name="keywords" content="ux designer, portfolio, ux/ui design, ux designer seattle, ux designer portfolio, mobile design, mobile application design, user-centered design, personas, user journey map">
@@ -39,6 +41,13 @@
 
 			$("[data-menu-burger]").click(function(){
 				$("html").toggleClass("menu-burger__html-overlay");
+			});
+
+			$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+				event.preventDefault();
+				$(this).ekkoLightbox({
+
+				});
 			});
 		});
 	</script>
@@ -171,7 +180,9 @@
 		</div>
 
 		<div class="col-xl-7 col-md-10 mx-auto">
-			<img src="img/tutor/map-min.png" width="100%" alt="">
+			<a href="img/tutor/map-min.png" data-toggle="lightbox" data-gallery="">
+				<img src="img/tutor/map-min.png" class="img-fluid">
+			</a>
 		</div>
 	</div>
 </div>
