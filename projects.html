@@ -24,9 +24,20 @@
 	<meta name="keywords" content="ux designer, portfolio, ux/ui design, ux designer seattle, ux designer portfolio">
 	<meta name="description" content="UI/UX Designer Portfolio">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
 
 	<script>
 		$(document).ready(function() {
+			$('#downIcon').click(function (event) {
+				event.preventDefault();
+				var link = this;
+				$.smoothScroll({
+					scrollTarget: link.hash
+				});
+			});
+
 			$("[data-menu-burger]").click(function(){
 				$("html").toggleClass("menu-burger__html-overlay");
 			});
@@ -65,7 +76,7 @@
 					and followed <span class="nowrap">a user-centered</span> design&nbsp;process.
 					In&nbsp;the&nbsp;U.S., I&nbsp;have had several short-term projects.
 				</p>
-				<!--<a class="downIcon"></a>-->
+				<a class="downIcon" id="downIcon" href="#projects"></a>
 			</div>
 		</div>
 	</div>
