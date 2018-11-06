@@ -4,7 +4,7 @@ body, html {
 	min-height: 100%;
 }
 
-.homepage .paper {
+/*.homepage .paper {
 	background: url('../img/bg-repeat-2.png') 0 0 repeat-y;
 	margin: 0 0 0 30%;
 	padding: 1% 0 20px 9%;
@@ -17,7 +17,7 @@ body, html {
 	font-size: 46px;
 	font-weight: 300;
 	margin: 15% 0 0 0;
-}
+}*/
 
 .otherPages {
 	background: #F7F7F7;
@@ -34,6 +34,20 @@ body, html {
 	}
 	.otherPages .paper__white {
 		background: #fff;
+		}
+	.otherPages .paper__projects {
+		background: #238585 url('../img/projects-bg.png') 0 0 no-repeat;
+		background-size: cover;
+		}
+		.otherPages .paper__projects h1 {
+			color: #F0F0F0;
+			font-weight: 200;
+			font-size: 52px;
+		}
+		.otherPages .paper__projects p {
+			color: #F0F0F0;
+			font-weight: 200;
+			font-size: 18px;
 		}
 
 	.otherPages .paper__noSideMenu {
@@ -69,6 +83,7 @@ body, html {
 		z-index: 1001;
 		background: #F7F7F7;
 		padding: 1% 40px;
+		border-bottom: 1px #EFEFEF solid;
 	}
 	.logo {
 		position: relative;

@@ -12,96 +12,163 @@
 	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kristina Alekseeva - UI/UX Designer</title>
-	<link href="css/reset.css" rel="stylesheet">
+	<title>UI/UX Designer Portfolio — Kristina Alekseeva</title>
+	<meta name="keywords" content="ux designer, portfolio, ux/ui design, ux designer seattle, ux designer portfolio">
+	<meta name="description" content="UI/UX Designer Portfolio">
+
+	<!--<link href="css/reset.css" rel="stylesheet">-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link href="css/layout.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,300i,400,500,600,700,800,900" rel="stylesheet">
+	<link href="css/projects.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
 	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
-	<meta name="keywords" content="ux designer, portfolio, ux/ui design, ux designer seattle, ux designer portfolio">
-	<meta name="description" content="UI/UX Designer based in Seattle">
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
 
 	<script>
 		$(document).ready(function() {
+			$('#downIcon').click(function (event) {
+				event.preventDefault();
+				var link = this;
+				$.smoothScroll({
+					scrollTarget: link.hash
+				});
+			});
+
 			$("[data-menu-burger]").click(function(){
 				$("html").toggleClass("menu-burger__html-overlay");
 			});
 		});
 	</script>
 </head>
-<body class="homepage">
+<body class="otherPages">
 
-<div class="homepage_wrap paper">
-	<div class="paper_wide header">
-		<ul class="menu">
-			<li class="menu_item menu_item-current"><span>Home</span></li>
-			<li class="menu_item"><a href="projects.html">Portfolio</a></li>
-			<li class="menu_item">
-				<a class="contactIcon" href="https://www.linkedin.com/in/alekseevakristina" target="_blank"><img src="img/linkedIn.png" width="24" alt="LinkedIn"></a>
-			</li>
-			<li class="menu_item" style="margin-left: 5px;">
-				<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="24" alt="LinkedIn"></a>
-			</li>
-		</ul>
-		<div class="menu-burger__btn d-xs-inline-block d-sm-none" data-menu-burger=""><span></span></div>
-		<div class="logo"><img src="img/mylogo.png" width="133" alt=""></div>
-	</div>
-	<h1 class="paper_small title">
-		I'm a UI/UX&nbsp;designer
-	</h1>
-	<div class="paper_small homepage_desc pb-4 mt-5">
-		<p>
-			When I was 10, I&nbsp;discovered that if&nbsp;I&nbsp;close all cabinet doors
-			and put things like they’ve been cared&nbsp;for, my&nbsp;mom
-			wouldn’t notice that I&nbsp;didn’t vacuume. I've&nbsp;been doing it since:
-			organizing information and making it look clean, beautiful,
-			and easy to&nbsp;deal&nbsp;with.
-		</p>
-		<a class="borderButton mt-4" href="projects.html">Jump to portfolio</a>
-	</div>
-	<!--<div class="paper_wide points row pt-4 pb-4 my-5 pl-0 ml-0 mr-0">
-		<div class="col-sm-4 mb-1 mt-3 pl-0">
-			<p class="points_title points_bold">Experience</p>
-			<ul class="g-list">
-				<li>
-					<span class="">UI/UX Designer<br>5+ years</span> 
-				</li>
-				<li>
-					<span class=" ">Front End Developer<br>5 years</span> 
-				</li>
-			</ul>
-		</div>
-		<div class="col-sm-4 mb-1 mt-3 pl-0">
-			<p class="points_title points_bold">Skills</p>
-			<ul class="g-list">
-				<li>Desktop & Mobile UX&nbsp;Design: Wireframes, Interactive Prototypes, Visual Design</li>
-				<li>Information Architecture</li>
-				<li>User Story Mapping</li>
-				<li>UX Research</li>
-			</ul>
-		</div>
-		<div class="col-sm-4 mt-3 pl-0">
-			<p class="points_title points_bold">Tools</p>
-			<ul class="g-list">
-				<li>Sketch + InVision</li>
-				<li>HTML, CSS, Javascript, JQuery</li>
-				<li>Photoshop, Fireworks, InDesign, Figma</li>
-			</ul>
-		</div>
-	</div>-->
-
-	<!--div class="paper_small textMe pb-5">
-		<p>I’m currently looking for a&nbsp;new&nbsp;challenge, an&nbsp;exciting project,
-			and&nbsp;a&nbsp;friendly&nbsp;team.
-		</p>
-		<p class="textMe_links textMe_links__home">
-			<a class="contactIcon" href="https://www.linkedin.com/in/alekseevakristina" target="_blank"><img src="img/linkedIn.png" width="40" alt="LinkedIn"></a>
-			<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="40" alt="LinkedIn"></a>
-		</p>
-	</div-->
+<div class="header">
+	<ul class="menu">
+		<li class="menu_item menu_item-current"><a href="index.html">Portfolio</a></li>
+		<li class="menu_item"><a href="files/Resume_Kristina_Alekseeva.pdf">Resume</a></li>
+		<li class="menu_item">
+			<a class="contactIcon" href="https://www.linkedin.com/in/alekseevakristina" target="_blank"><img src="img/linkedIn.png" width="24" alt="LinkedIn"></a>
+		</li>
+		<li class="menu_item" style="margin-left: 5px;">
+			<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="24" alt="LinkedIn"></a>
+		</li>
+	</ul>
+	<div class="menu-burger__btn d-xs-inline-block d-sm-none" data-menu-burger=""><span></span></div>
+	<div class="logo"><a href="index.html"><img src="img/mylogo.png" width="133" alt="Kristina Alekseeva"></a></div>
 </div>
 
+<div class="paper paper__top paper__white paper__projects">
+	<div class="row">
+		<div class="col-xl-7 col-md-8 mx-auto">
+			<div class="g-lightFont">
+				<h1 class="title mb-5">Kristina's Portfolio</h1>
+				<p>
+					I'm a&nbsp;UI/UX&nbsp;Designer who started her journey as a&nbsp;Front&nbsp;End&nbsp;Developer with a&nbsp;CS&nbsp;background 10&nbsp;years&nbsp;ago.
+
+					Following <span class="nowrap">a user-centered</span> design process,
+					I&nbsp;create web and mobile applications from wireframes to visual design, conduct user research,
+					and collaborate with multifunctional teams.
+				</p>
+				<div class="text-center mt-5 pt-4"><a class="downIcon" id="downIcon" href="#projects"></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="paper" id="projects" style="position: relative;">
+	<div class="row">
+
+		<div class="col-md-12">
+			<p class="g-capstitle mb-2">
+				LONG-TERM PROJECTS
+			</p>
+		</div>
+
+		<div class="col-md-4 col-sm-6 mb-4 mt-2">
+			<a class="projects_item" href="purchases-product.html">
+				<img class="projects_item_img" src="img/projects/zakupki.png" alt="zakupki preview">
+				<p class="projects_title">Contracting Search Web App: from&nbsp;mission to&nbsp;solution</p>
+				<p class="projects_date">Jan 2013-Apr 2018</p>
+			</a>
+		</div>
+
+		<div class="col-md-4 col-sm-6 mb-4 mt-2">
+			<a class="projects_item" href="purchases-mobile.html">
+				<img class="projects_item_img" src="img/projects/zakupki-m.png" alt="zakupki mobile preview">
+				<p class="projects_title">Mobile version of Contracting Search&nbsp;App</p>
+				<p class="projects_date">Jan 2013-Apr 2018</p>
+			</a>
+		</div>
+
+		<div class="col-md-4 col-sm-6 mb-4 mt-2">
+			<a class="projects_item" href="other-ca.html">
+				<img class="projects_item_img" src="img/projects/ca.png" alt="certificate authority preview">
+				<p class="projects_title">Certificate Authority Web App</p>
+				<p class="projects_date">Oct 2010-Aug 2014</p>
+			</a>
+		</div>
+
+	</div>
+
+	<div class="row pt-4" id="otherProjects">
+			<div class="col-md-12">
+				<p class="g-capstitle mb-2">
+					OTHER PROJECTS
+				</p>
+			</div>
+			<div class="col-md-12">
+				<div class="row">
+
+					<div class="col-md-4 col-sm-6 mb-4 mt-2">
+						<a class="projects_item" href="college-tutor.html">
+							<img class="projects_item_img" src="img/projects/tutor.png" alt="tutor helper preview">
+							<p class="projects_title">Tutor Helper Mobile App<br>at&nbsp;Seattle Central College</p>
+							<p class="projects_date">Jan 2018-Mar 2018</p>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 mb-4 mt-2">
+						<a class="projects_item" href="college-urm.html">
+							<img class="projects_item_img" src="img/projects/research.png" alt="user research preview">
+							<p class="projects_title">User Research for the&nbsp;Homeless&nbsp;Coalition Website</p>
+							<p class="projects_date">Jan 2018-Mar 2018</p>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 mb-4 mt-2">
+						<a class="projects_item" href="college-cexarmusic.html">
+							<img class="projects_item_img" src="img/projects/cexar.png" alt="cexarmusic preview">
+							<p class="projects_title">Videographer & Photographer Website: Desktop and Mobile</p>
+							<p class="projects_date">Mar 2018-Current</p>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 mb-4 mt-2">
+						<a class="projects_item" href="other-delivery.html">
+							<img class="projects_item_img" src="img/projects/delivery.png" alt="crm for delivery preview">
+							<p class="projects_title">CRM for Delivery Company</p>
+							<p class="projects_date">Jun 2013</p>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+</div>
+
+<div class="footer py-4">
+	<p class="mb-2">Contact Kristina</p>
+	<p class="textMe_links">
+		<a class="contactIcon" href="https://www.linkedin.com/in/alekseevakristina" target="_blank"><img src="img/linkedIn.png" width="40" alt="LinkedIn"></a>
+		<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="40" alt="LinkedIn"></a>
+	</p>
+</div>
 </body>
 </html>
