@@ -20,9 +20,13 @@ a:hover {
 a:visited {
 	color: #3523CA;
 }
+ul.g-list {
+	padding-left: 0;
+}
 ul.g-list li {
 	padding: 0 0 5px 26px;
 	position: relative;
+	list-style-type: none;
 }
 ul.g-list li:before {
 	content: "";
