@@ -36,18 +36,24 @@ body, html {
 		background: #fff;
 		}
 	.otherPages .paper__projects {
-		background: #238585 url('../img/projects-bg.png') 0 0 no-repeat;
-		background-size: cover;
+        /*
+		background: #238585 url('../img/bg-black.png') 0 -10px no-repeat;
+        */
+		background: #fff;
+		/*background-size: cover;*/
+		}
 		}
 		.otherPages .paper__projects h1 {
-			color: #F0F0F0;
+			/*color: #F0F0F0;*/
+			color: #222;
 			font-weight: 200;
 			font-size: 52px;
 		}
 		.otherPages .paper__projects p {
-			color: #F7F7F7;
+			/*color: #F7F7F7;*/
+			color: #222;
 			font-weight: 200;
-			font-size: 18px;
+			/*font-size: 18px;*/
 		}
 
 	.otherPages .paper__noSideMenu {
