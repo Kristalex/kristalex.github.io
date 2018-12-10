@@ -36,11 +36,8 @@ body, html {
 		background: #fff;
 		}
 	.otherPages .paper__projects {
-        /*
-		background: #238585 url('../img/bg-black.png') 0 -10px no-repeat;
-        */
 		background: #fff;
-		/*background-size: cover;*/
+		position: relative;
 		}
 		}
 		.otherPages .paper__projects h1 {
