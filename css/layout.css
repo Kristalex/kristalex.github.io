@@ -131,14 +131,14 @@ body, html {
 			margin-left: 20px;
 			line-height: 1.6;
 			}
-			.menu a:link, .menu a:visited {
+			.menu_link:link, .menu_link:visited {
 				color: #222;
 			}
-			.menu a:hover {
+			.menu_link:hover {
 				text-decoration: none;
 				color: #DD3A3A;
 			}
-		.menu_item-current a, .menu_item-current span {
+		.menu_item-current .menu_link, .menu_item-current .menu_span {
 			border-bottom: 3px #DD3A3A solid;
 		}
 
