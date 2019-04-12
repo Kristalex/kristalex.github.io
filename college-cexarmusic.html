@@ -27,6 +27,7 @@
 	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
 	<meta name="keywords" content="ux designer, portfolio, ux/ui design, ux designer seattle, ux designer portfolio, mobile design, user-centered design, personas, user story map">
 	<meta name="description" content="Desktop and mobile portfolio website for videographer and photographer">
+	<script src="js/common.js"></script>
 
 	<script>
 		$(document).ready(function() {
@@ -38,10 +39,6 @@
 				});
 			});
 
-			$("[data-menu-burger]").click(function(){
-				$("html").toggleClass("menu-burger__html-overlay");
-			});
-
 			$(document).on('click', '[data-toggle="lightbox"]', function(event) {
 				event.preventDefault();
 				$(this).ekkoLightbox({
@@ -51,7 +48,7 @@
 		});
 	</script>
 </head>
-<body class="otherPages" data-spy="scroll" data-target="#sidemenu">
+<body class="wrap" data-spy="scroll" data-target="#sidemenu">
 
 <div class="header">
 	<ul class="menu d-none d-sm-block">

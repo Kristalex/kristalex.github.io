@@ -24,6 +24,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="js/jquery.smooth-scroll.js"></script>
 	<script src="js/ekko-lightbox.min.js"></script>
+	<script src="js/common.js"></script>
 
 	<script>
 		$(document).ready(function() {
@@ -35,10 +36,6 @@
 				});
 			});
 
-			$("[data-menu-burger]").click(function(){
-				$("html").toggleClass("menu-burger__html-overlay");
-			});
-
 			$(document).on('click', '[data-toggle="lightbox"]', function(event) {
 				event.preventDefault();
 				$(this).ekkoLightbox();
@@ -46,7 +43,7 @@
 		});
 	</script>
 </head>
-<body class="otherPages">
+<body class="wrap">
 
 <div class="header">
 	<ul class="menu">

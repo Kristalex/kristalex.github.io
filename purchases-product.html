@@ -30,6 +30,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
 	<link href="css/ekko-lightbox.css" rel="stylesheet" type="text/css">
+	<script src="js/common.js"></script>
 
 	<script>
 		$(document).ready(function() {
@@ -41,10 +42,6 @@
 				});
 			});
 
-			$("[data-menu-burger]").click(function(){
-				$("html").toggleClass("menu-burger__html-overlay");
-			});
-
 			$(document).on('click', '[data-toggle="lightbox"]', function(event) {
 				event.preventDefault();
 				$(this).ekkoLightbox();
@@ -52,7 +49,7 @@
 		});
 	</script>
 </head>
-<body class="otherPages" data-spy="scroll" data-target="#sidemenu">
+<body class="wrap" data-spy="scroll" data-target="#sidemenu">
 
 <div class="header">
 	<ul class="menu">
@@ -127,14 +124,12 @@
 					Along with the search, the product helps users organize and analyze potential&nbsp;auctions.
 				</p>
 				<h2 class="g-h3 mt-4 pt-2 pb-2">Competitors</h2>
-				<ul class="g-list">
-					<li>Free government website</li>
-					<li>Some paid websites with the&nbsp;same&nbsp;goal</li>
-				</ul>
 				<p>
 					In design and implementation of every feature, we followed UX best practices.
-					Our strategy was not based on first to&nbsp;market, but best to&nbsp;market.
-					The&nbsp;product is still growing and already has 18k+&nbsp;paid&nbsp;users.
+					Our strategy was not based on first to&nbsp;market, but best to&nbsp;market. At the start,
+					our competitors were a couple of paid websites and a free government website.
+					Right now there are more than 30 competitors on the market. Our product
+					is considered to be in the top 3 and it has 18k+&nbsp;paid&nbsp;users.
 				</p>
 				<a class="borderButton mt-4" id="jumpToSolution" href="#solution">Jump to solution</a>
 			</div>
@@ -199,7 +194,7 @@
 				<div class="col-xl-7 col-md-8 mx-auto pb-3">
 					<h2 class="pb-3 g-h2">User flow</h2>
 					<p>
-						User flow can be divided into 3 steps: search, analysis, and participation.
+						User flow is divided into 3 steps: search, analysis, and participation.
 						On each step of the flow, we uncovered user problems and tried to solve them.
 						Here's the user flow in our service.
 					</p>

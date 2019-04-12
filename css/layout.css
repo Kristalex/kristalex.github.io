@@ -4,38 +4,23 @@ body, html {
 	min-height: 100%;
 }
 
-/*.homepage .paper {
-	background: url('../img/bg-repeat-2.png') 0 0 repeat-y;
-	margin: 0 0 0 30%;
-	padding: 1% 0 20px 9%;
-}
-.homepage {
-	background: #262729 url('../img/myspace-bw-min.png') 0 0 no-repeat;
-	background-size: cover;
-}
-.homepage .title {
-	font-size: 46px;
-	font-weight: 300;
-	margin: 15% 0 0 0;
-}*/
-
-.otherPages {
+.wrap {
 	background: #F7F7F7;
 	}
-	.otherPages .paper {
+	.paper {
 		margin: 0;
 		padding: 6% 14%;
 	}
-	.otherPages .paper__top {
+	.paper__top {
 		padding-top: 12%;
 	}
-	.otherPages .paper__color {
+	.paper__color {
 		background: #F0F0F0;
 	}
-	.otherPages .paper__white {
+	.paper__white {
 		background: #fff;
 		}
-	.otherPages .paper__projects {
+	.paper__projects {
 		background: #fff;
 		position: relative;
 		}
@@ -50,7 +35,7 @@ body, html {
 			line-height: 1.8;
 		}
 
-	.otherPages .paper__noSideMenu {
+	.paper__noSideMenu {
 		padding-right: 20%;
 	}
 	.paper_small {
@@ -74,16 +59,16 @@ body, html {
 
 .header {
 	overflow: hidden;
+	width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1001;
+    padding: 1% 40px;
 	}
-	.otherPages .header {
-		width: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 1001;
-		background: #F7F7F7;
-		padding: 1% 40px;
-		border-bottom: 1px #EFEFEF solid;
+	.header__scroll {
+	    background: #fff;
+	    border-bottom: 1px #EFEFEF solid;
 	}
 	.logo {
 		position: relative;
@@ -133,63 +118,43 @@ body, html {
 			border-bottom: 3px #DD3A3A solid;
 		}
 
-.homepage_wrap {
-	height: auto;
-	min-height: 100%;
-}
-.homepage_desc {
-	max-width: 600px;
-	font-weight: 300;
-}
-
 .footer {
 	border-top: 1px #E4E4E4 solid;
 	text-align: center;
 }
 
 @media screen and (max-width:1280px) {
-	.otherPages .paper {
+	.paper {
 		margin-left: 0;
 		padding-top: 6%;
 		padding-bottom: 8%;
 		padding-left: 6%;
 		padding-right: 6%;
 	}
-	.otherPages .paper__top {
+	.paper__top {
 		padding-top: 14%;
 	}
-	.otherPages .paper__noSideMenu {
+	.paper__noSideMenu {
 		padding-right: 9%;
 	}
-	.otherPages .header {
+	.header {
 		padding-left: 40px;
 		padding-right: 40px;
-	}
-
-	.otherPages .header {
 		padding-top: 9px;
-		padding-bottom: 9px;
-	}
-	.homepage .paper {
-		padding-top: 9px;
+        padding-bottom: 9px;
 	}
 }
 
 @media screen and (max-width:700px) {
-	.homepage .paper {
-		margin: 0;
-		padding-top: 4%;
-		padding-left: 15px;
-	}
-	.otherPages .paper {
+	.paper {
 		margin-left: 0;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	.otherPages .paper__top {
+	.paper__top {
 		padding-top: 16%;
 	}
-	.otherPages .paper__sideMenu {
+	.paper__sideMenu {
 		padding-right: 140px;
 	}
 	.paper_small {
@@ -198,7 +163,7 @@ body, html {
 	.paper_wide {
 		padding-right: 10px;
 	}
-	.otherPages .header {
+	.header {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -208,10 +173,10 @@ body, html {
 }
 
 @media screen and (max-width:575px) {
-	.otherPages .paper__top {
+	.paper__top {
 		padding-top: 75px;
 	}
-	.otherPages .paper__sideMenu {
+	.paper__sideMenu {
 		padding-right: 15px;
 	}
 	.title {
@@ -268,27 +233,24 @@ body, html {
 		bottom: -5px;
 	}
 
-	.otherPages .header, .homepage .header {
+	.header {
 		overflow: visible;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		}
-	.homepage .paper {
-		padding-top: 0;
-		}
-		.logo, .logo img {
-			float: none;
-			height: 35px;
-			width: auto!important;
-			}
-			.logo:hover::before {
-				left: 13px;
-				top: 13px;
-			 }
-			.logo:hover::after {
-				left: 13px;
-				top: 20px;
-			}
+    .logo, .logo img {
+        float: none;
+        height: 35px;
+        width: auto!important;
+        }
+        .logo:hover::before {
+            left: 13px;
+            top: 13px;
+         }
+        .logo:hover::after {
+            left: 13px;
+            top: 20px;
+        }
 	.menu-burger__html-overlay .header {
 		position: inherit;
 	}
