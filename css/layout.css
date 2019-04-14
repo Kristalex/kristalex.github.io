@@ -23,6 +23,7 @@ body, html {
 	.paper__projects {
 		background: #fff;
 		position: relative;
+		padding-bottom: 10%;
 		}
 		.paper__projects .paper__projects_title {
 			color: #222;
@@ -136,6 +137,9 @@ body, html {
 	}
 	.paper__noSideMenu {
 		padding-right: 9%;
+	}
+	.paper__projects {
+	    padding-bottom: 13%;
 	}
 	.header {
 		padding-left: 40px;
