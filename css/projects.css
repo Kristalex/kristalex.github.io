@@ -1,8 +1,5 @@
 .projects_item {
 	display: block;
-	text-align: center;
-	background: #fff;
-	border: 1px #EFEFEF solid;
 	overflow: hidden;
 	height: 100%;
 
@@ -22,22 +19,15 @@
 	}
 	.projects_item .projects_title {
 		font-size: 17px;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.5;
 		color: #222;
-		padding: 25px 15px 5px;
-		border-top: 1px #E4E4E4 solid;
+		padding: 15px 0 0;
 		clear: none;
 		}
 	.projects_item:hover .projects_title {
 		color: #DD3A3A;
 		}
-	.projects_item .projects_date {
-		font-size: 15px;
-		color: #A0A0A0;
-		font-weight: 300;
-		padding: 0 15px 25px;
-	}
 
 .projects_persona {
 	margin: 5px 10px 0 0;
