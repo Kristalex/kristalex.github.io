@@ -78,6 +78,9 @@ h1 {
 .g-lightFont {
 	font-weight: 300;
 }
+.g-smallFont {
+    font-size: 15px;
+}
 
 .imgBorder {
 	border: 1px #EDEDED solid;
