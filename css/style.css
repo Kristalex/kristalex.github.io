@@ -82,6 +82,9 @@ h1 {
     font-size: 15px;
     line-height: 1.7;
 }
+.g-bold {
+    font-weight: 600;
+}
 
 .imgBorder {
 	border: 1px #EDEDED solid;
