@@ -85,6 +85,9 @@ h1 {
 .g-bold {
     font-weight: 600;
 }
+.g-staticLink:visited {
+    color: #188ba8;
+}
 
 .imgBorder {
 	border: 1px #EDEDED solid;
