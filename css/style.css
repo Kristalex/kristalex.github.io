@@ -20,6 +20,9 @@ a:hover {
 a:visited {
 	color: #3523CA;
 }
+a.g-colored:link, a.g-colored:visited {
+    color: #DD3A3A;
+}
 ul.g-list {
 	padding-left: 0;
 }
