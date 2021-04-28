@@ -91,8 +91,8 @@
 				</p>-->
 
 				<p style="font-weight: 300; font-size: 20px;" class="mb-5">
-					A web application for the Russian b2b/b2g market that aggregates auctions placed by&nbsp;customers
-					and provides an&nbsp;auctions search and a&nbsp;management system for&nbsp;suppliers.
+					A web application for the Russian b2b/b2g market that aggregates auctions published by&nbsp;state companies (customers)
+					and serves as&nbsp;a&nbsp;search and management tool for&nbsp;companies-suppliers.
 				</p>
 
 				<!--<p class="pb-2">
@@ -114,8 +114,11 @@
 						<p>Jan 2013–Mar 2018</p>
 					</div>
 				</div></div>
-
-				<!--<h2 class="g-h3 mt-1 pb-2 pt-2">What I did</h2>-->
+				<p>
+					<b class="g-bold">Market. </b>
+					In Russia, state companies (customers) are obligated to publish services and products they need on special platforms as auctions.
+					Companies-suppliers search for those auctions to participate in them and win the contract.
+				</p>
 				<p>
 					<b class="g-bold">I led this project from the initial vision to 18k+ paid users.</b>
 					I helped in conducting user and competitive research, analyzing data, defining user personas and an&nbsp;MVP.
@@ -134,27 +137,13 @@
 		<div class="col-xl-7 col-md-8 mx-auto mb-4">
 			<h2 class="g-h2 mb-4">User Research</h2>
 			<p class="mb-4">
-				We started research with contextual interviews and usability testings on 3 competitors' websites way.
-				It gave us a pretty good idea of what was going on in the field and
-				what problems users were dealing with.
-			</p>
-			<!--<p>
-				We divided the whole process of participating in auctions into 3 major steps:
-				search, analysis, and actual participation. Based on research, we saw that users were
-				hugely suffering even on the first step. So we decided to focus our MVP on the first step only.
-			</p>-->
-
-			<p class="mb-4 mt-4 g-bold">
+				We started research with contextual interviews and usability testings of 3 competitors' websites.
 				Research of existing solutions revealed problems on every step of&nbsp;the&nbsp;user process.
-				We started to develop our app iteratively to solve those problems.
 			</p>
-
-			<!--<p>
-				Later on, we were covering other user steps of the process iteratively researching,
-				implementing, and testing the product.
-			</p>-->
 			<p>
-				Here's just a short preview of our personas.
+				Based on research, we defined personas and created a huge user story map for the following year
+				to see the potential course of our app. We started with the first step of user process
+				and then iteratively research and moved forward covering the whole process.
 			</p>
 		</div>
 
@@ -184,21 +173,24 @@
 						<p style="line-height: 1.65; font-size: 20px;"><b class="g-bold">User step 1 &mdash; Search</b></p>
 					</div>
 
-					<div class="col-xl-4 pb-1 pr-0">
-						<b class="g-bold mb-1">Problem &ldquo;Irrelevant results&rdquo;</b>
+					<div class="col-xl-4 pb-4 pr-0">
+						<b class="g-superbold mb-1">Problem &ldquo;Irrelevant results&rdquo;</b>
 						<p class="g-smallFont">
 							Too many irrelevant results.
 						</p>
-						<p class="g-bold mb-1">Solution</p>
+						<b class="g-bold mb-1 g-smallFont">Obstacles</b>
 						<p class="g-smallFont">
-							The final solution was search results sorted by a publish date with an opportunity
-							to sort depending on a&nbsp;scenario.
+							Users searched periodically and needed new auctions to be on top which meant sorting by publish date. But&nbsp;this solution
+							was technically harder to implement than, for example, sorting by relevance. Engineers needed more time
+							and also real data to configure search engine settings.
 						</p>
-						<p class="g-bold mb-1">Process</p>
+						<p class="g-bold mb-1 g-smallFont">Solution</p>
 						<p class="g-smallFont">
-							I worked closely with developers on the search engine
-							to cover both user scenarios
-							and development restrictions.
+							I designed a compromise solution where results were sorted by relevance
+							but users had a time filter (2&nbsp;days, week, all) to limit the amount of results.<br>
+							When engineers found the right configuration, I&nbsp;designed the final version
+							with search results sorted by a publish date. Eventually, we added an&nbsp;opportunity
+							to sort results depending on a&nbsp;scenario.
 						</p>
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
@@ -210,19 +202,18 @@
 
 				<div class="row">
 					<div class="col-xl-4 pb-1 pr-0">
-						<p class="g-bold mb-1">Problem &ldquo;Difficult search form&rdquo;</p>
+						<p class="g-superbold mb-1">Problem &ldquo;Difficult search form&rdquo;</p>
 						<p class="g-smallFont">
-							Users didn't understand search fields and couldn't use them properly.
+							Composing search requests took too much time because the form was too complicated.
 						</p>
-						<p class="g-bold mb-1">Solution</p>
+						<p class="g-bold mb-1 g-smallFont">Solution</p>
 						<p class="g-smallFont">
-							I highlighted two main search fields and researched every other search option
-							to make sure users really needed it.
-
-							<!--The first version of a search form was with only two fields that covered 90%
-							of user scenarios: “Keywords” and “Region”. Then step by step we added
-							new search options as an advanced search. Every new option was carefully researched
-							to make sure users really needed it.-->
+							Research showed that there were 2 search options that 90% users used every time &mdash;
+							keywords and region. We launched our MVP with just these two options.
+							Then we research other scenarios and iteratively added new options
+							depending on their importance and frequency.
+							My job was to make sure every new option brings value and that
+							the search form continues to look clear and easy to use.
 						</p>
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
@@ -234,14 +225,21 @@
 
 				<div class="row">
 					<div class="col-xl-4 pb-1 pr-0">
-						<p class="g-bold mb-1">Problem &ldquo;Repetitive search&rdquo;</p>
+						<p class="g-superbold mb-1">Problem &ldquo;Repetitive search&rdquo;</p>
 						<p class="g-smallFont">
-							Users had to repeat their search every single&nbsp;time.
+							Users had to compose their regular search requests every single&nbsp;time.
 						</p>
-						<p class="g-bold mb-1">Solution</p>
+						<p class="g-bold mb-1 g-smallFont">Solution</p>
 						<p class="g-smallFont">
 							We designed “Saved searches” to allow users to save regular
-							requests and get notifications by email about new results.
+							requests and get notifications by email about new auctions.
+						</p>
+						<p class="g-bold mb-1 g-smallFont">Redesign</p>
+						<p class="g-smallFont">
+							I had to redesign the subscription process because we noticed that
+							users were not subscribing as we expected. First, the subscribe button was
+							only on the saved searches page. Instead, I added a subscribe checkbox
+							when users were saving new search requests. The subscription rates went up.
 						</p>
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
