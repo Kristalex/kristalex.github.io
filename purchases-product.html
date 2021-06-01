@@ -71,10 +71,10 @@
 	<nav id="sidemenu" class="d-none d-sm-block">
 		<ul class="sideMenu nav flex-column">
 			<li class="sideMenu_item nav-item"><a class="nav-link" href="#overview">Overview</a></li>
-			<li class="sideMenu_item nav-item"><a class="nav-link" href="#research">User research</a></li>
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#research">User problems</a></li>
 			<li class="sideMenu_item nav-item"><a class="nav-link" href="#solution">Solution</a></li>
 			<li class="sideMenu_item nav-item"><a class="nav-link" href="#mobile">Mobile version</a></li>
-			<li class="sideMenu_item nav-item"><a class="nav-link" href="#other">Outside the product</a></li>
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#other">Other collaborations</a></li>
 		</ul>
 	</nav>
 
@@ -135,11 +135,37 @@
 <div class="paper paper__sideMenu content" id="research" style="position: relative;">
 	<div class="row">
 		<div class="col-xl-7 col-md-8 mx-auto mb-4">
-			<h2 class="g-h2 mb-4">User Research</h2>
+			<h2 class="g-h2 mb-4">User process and problems</h2>
 			<p class="mb-4">
 				We started research with contextual interviews and usability testings of 3 competitors' websites.
 				Research of existing solutions revealed problems on every step of&nbsp;the&nbsp;user process.
 			</p>
+
+			<div class="row pt-4">
+				<div class="col-md-4 my-2">
+					<b class="g-superbold">1.<br/>Search for new auctions</b>
+					<p class="g-smallFont">Difficult search form, irrelevant results, repetitive search</p>
+				</div>
+				<div class="col-md-4 my-2">
+					<b class="g-superbold">3.<br/>Prepare for participation</b>
+					<p class="g-smallFont">Manual storage of important auctions, unexpected changes to&nbsp;auctions' conditions, unclear collaboration with coworkers</p>
+				</div>
+				<div class="col-md-4 my-2">
+					<b class="g-superbold">5.<br/>Analyze after</b>
+					<p class="g-smallFont">No analytics about customers and other suppliers</p>
+				</div>
+			</div>
+			<img src="img/line.png" style="width: 100%" />
+			<div class="row pt-3 pb-4">
+				<div class="col-md-4 my-2 offset-md-2">
+					<b 	class="g-superbold">2.<br/>Analyze before</b>
+					<p class="g-smallFont">Complecated and duplicated auction data, affiliation between customers and suppliers</p>
+				</div>
+				<div class="col-md-4 my-2 offset-md-1">
+					<b class="g-superbold">4.<br/>Participate</b>
+					<p class="g-smallFont">This part happens on special platforms</p>
+				</div>
+			</div>
 			<p>
 				Based on research, we defined personas and created a huge user story map for the following year
 				to see the potential course of our app. We started with the first step of user process
@@ -147,7 +173,7 @@
 			</p>
 		</div>
 
-		<div class="col-xl-10 col-md-11 mx-auto">
+		<!-- <div class="col-xl-10 col-md-11 mx-auto">
 			<div class="row">
 				<div class="col-md-6 my-2">
 					<img class="imgBorder img-fluid mb-4" src="img/purchases/persona-1-min.png">
@@ -156,7 +182,7 @@
 					<img class="imgBorder img-fluid mb-4" src="img/purchases/persona-2-min.png">
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 
@@ -170,9 +196,32 @@
 
 				<div class="row">
 					<div class="col-xl-12 pb-4 pr-5">
-						<p style="line-height: 1.65; font-size: 20px;"><b class="g-bold">User step 1 &mdash; Search</b></p>
+						<p class="g-steptitle">User step 1 &mdash; Search for new auctions</p>
 					</div>
 
+					<div class="col-xl-4 pb-1 pr-0">
+						<b class="g-superbold mb-1">Problem &ldquo;Difficult search form&rdquo;</b>
+						<p class="g-smallFont">
+							Composing search requests took too much time because the form was too complicated.
+						</p>
+						<p class="g-bold mb-1 g-smallFont">Solution</p>
+						<p class="g-smallFont">
+							Research showed that there were 2 search options that 90% users used every time &mdash;
+							keywords and region. We launched our MVP with just these two options.
+							Then we research other scenarios and iteratively added new options
+							depending on their importance and frequency.
+							My job was to make sure every new option brings value and that
+							the search form continues to look clear and easy to use.
+						</p>
+					</div>
+					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
+						<a href="img/purchases/search-min.png" data-toggle="lightbox" data-gallery="search-gallery">
+							<img src="img/purchases/search-min.png" class="img-fluid imgBorder">
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
 					<div class="col-xl-4 pb-4 pr-0">
 						<b class="g-superbold mb-1">Problem &ldquo;Irrelevant results&rdquo;</b>
 						<p class="g-smallFont">
@@ -202,30 +251,7 @@
 
 				<div class="row">
 					<div class="col-xl-4 pb-1 pr-0">
-						<p class="g-superbold mb-1">Problem &ldquo;Difficult search form&rdquo;</p>
-						<p class="g-smallFont">
-							Composing search requests took too much time because the form was too complicated.
-						</p>
-						<p class="g-bold mb-1 g-smallFont">Solution</p>
-						<p class="g-smallFont">
-							Research showed that there were 2 search options that 90% users used every time &mdash;
-							keywords and region. We launched our MVP with just these two options.
-							Then we research other scenarios and iteratively added new options
-							depending on their importance and frequency.
-							My job was to make sure every new option brings value and that
-							the search form continues to look clear and easy to use.
-						</p>
-					</div>
-					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
-						<a href="img/purchases/search-min.png" data-toggle="lightbox" data-gallery="search-gallery">
-							<img src="img/purchases/search-min.png" class="img-fluid imgBorder">
-						</a>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xl-4 pb-1 pr-0">
-						<p class="g-superbold mb-1">Problem &ldquo;Repetitive search&rdquo;</p>
+						<b class="g-superbold mb-1">Problem &ldquo;Repetitive search&rdquo;</b>
 						<p class="g-smallFont">
 							Users had to compose their regular search requests every single&nbsp;time.
 						</p>
@@ -254,19 +280,17 @@
 
 				<div class="row pt-2">
 					<div class="col-xl-12 pb-4 pr-5">
-						<p style="line-height: 1.65; font-size: 20px;">
-							<b class="g-bold">User step 2 &mdash; Analysis of potential auctions</b>
-						</p>
+						<p class="g-steptitle">User step 2 &mdash; Analyze before</p>
 					</div>
 
 					<div class="col-xl-4 pb-1 pr-0">
-						<p class="g-bold mb-1">Problem &ldquo;Difficult auction data&rdquo;</p>
+						<p class="g-superbold mb-1">Problem &ldquo;Difficult auction data&rdquo;</p>
 						<p class="g-smallFont">
 							Because of the sophisticated legal jargon and overlapping content,
 							users spent too much time on decision making
 							and often needed external support.
 						</p>
-						<p class="g-bold mb-1">Solution</p>
+						<p class="g-bold mb-1 g-smallFont">Solution</p>
 						<p class="g-smallFont">
 							Working closely with a Business Analyst, we unified auction data
 							from different sources and simplified it.
@@ -281,16 +305,16 @@
 
 				<div class="row pt-2">
 					<div class="col-xl-4 pb-1 pr-0">
-						<p class="g-bold mb-2" style="line-height: 1.55;">Problem &ldquo;Possible affiliation between customers and suppliers&rdquo;</p>
+						<p class="g-superbold mb-2" style="line-height: 1.55;">Problem &ldquo;Possible affiliation between customers and suppliers&rdquo;</p>
 						<p class="g-smallFont">
 							Users couldn't check if they could trust customers and if the auction is legit.
 						</p>
-						<p class="g-bold mb-1">Solution</p>
+						<p class="g-bold mb-1 g-smallFont">Solution</p>
 						<p class="g-smallFont">
 							I designed the whole flow for users to check customers
 							and uncover an&nbsp;affiliation.
 						</p>
-						<p class="g-bold mb-1">Insight &hearts;</p>
+						<p class="g-bold mb-1 g-smallFont">Insight &hearts;</p>
 						<p class="g-smallFont">
 							A lot of our competitors showed complicated analytics
 							with similar data but we learned that users didn't understand it
@@ -312,19 +336,17 @@
 
 				<div class="row pt-2">
 					<div class="col-xl-12 pb-4 pr-5">
-						<p style="line-height: 1.65; font-size: 20px;">
-							<b class="g-bold">User step 3 &mdash; Preparation for participation in auctions</b>
-						</p>
+						<p class="g-steptitle">User step 3 &mdash; Prepare for participation</p>
 					</div>
 
 					<div class="col-xl-4 pb-1 pr-0">
-						<p class="g-bold mb-1">Problem &ldquo;Manual work&rdquo;</p>
+						<p class="g-superbold mb-1">Problem &ldquo;Manual work&rdquo;</p>
 						<p class="g-smallFont">
 							Users did a lot of manual work: they copied data from
 							the website by hand, created Excel files, and combined it all into emails
 							to&nbsp;share with their coworkers.
 						</p>
-						<p class="g-bold mb-1">Solution</p>
+						<p class="g-bold mb-1 g-smallFont">Solution</p>
 						<p class="g-smallFont">
 							We created an online storage &ldquo;Favorites&rdquo; to&nbsp;make the work process
 							and collaboration easier.
@@ -345,16 +367,16 @@
 
 				<div class="row">
 					<div class="col-xl-4 pb-1 pr-0">
-						<p class="g-bold mb-1">Problem &ldquo;Customers change conditions&rdquo;</p>
+						<p class="g-superbold mb-1">Problem &ldquo;Customers change conditions&rdquo;</p>
 						<p class="g-smallFont">
 							Customers often changed auction conditions and
 							there wasn't any way to learn about it. In such situations,
 							suppliers didn't know they needed
 							to change their application documents and failed the auctions.
 						</p>
-						<p class="g-bold mb-1">Solution</p>
+						<p class="g-bold mb-1 g-smallFont">Solution</p>
 						<p class="g-smallFont">
-							We found a way to learn about changes and started to notify users about them.
+							We found a way to learn about changes and started to&nbsp;notify users about them.
 						</p>
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
@@ -460,7 +482,7 @@
 	<div class="content productBlock">
 		<div class="row">
 			<div class="col-xl-7 col-md-8 mx-auto">
-				<h3 class="g-h2 mb-4">Outside the product</h3>
+				<h3 class="g-h2 mb-4">Other collaborations</h3>
 				<p>
 					Another important part of the project was making the whole auction
 					process look easy. We simplified the legislation in our articles

@@ -61,7 +61,7 @@ h1 {
 }
 .g-h2 {
 	font-size: 34px;
-	font-weight: 300;
+	font-weight: 800;
 	line-height: 1.4;
 }
 .g-h3 {
@@ -73,6 +73,12 @@ h1 {
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 1.4;
+}
+.g-steptitle {
+	line-height: 1.65;
+	font-size: 20px;
+	font-weight: 800;
+	/* text-transform: uppercase; */
 }
 .g-capstitle {
 	font-size: 17px;
