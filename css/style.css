@@ -88,6 +88,9 @@ h1 {
 .g-bold {
     font-weight: 600;
 }
+.g-superbold {
+    font-weight: 700;
+}
 .g-staticLink:visited {
     color: #188ba8;
 }
