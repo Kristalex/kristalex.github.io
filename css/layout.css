@@ -174,6 +174,10 @@ body, html {
 	.title {
 		font-size: 40px;
 	}
+
+	.stepLine {
+		display: none;
+	}
 }
 
 @media screen and (max-width:575px) {
