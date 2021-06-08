@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117945022-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-117945022-1');
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Design Portfolio - Hey Mentor Mobile App — Kristina Alekseeva</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<script src="js/ekko-lightbox.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/projects.css" rel="stylesheet" type="text/css">
+	<link href="css/ekko-lightbox.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+	<meta name="keywords" content="ux designer, portfolio, ux/ui design, ux designer seattle, ux designer portfolio, mobile design, mobile application design, user-centered design, personas, user journey map">
+	<meta name="description" content="Mobile application design for scheduling appointments with tutors">
+	<script src="js/common.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('#sidemenu a, #jumpToSolution').click(function (event) {
+				event.preventDefault();
+				var link = this;
+				$.smoothScroll({
+					scrollTarget: link.hash
+				});
+			});
+
+			$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+				event.preventDefault();
+				$(this).ekkoLightbox({
+
+				});
+			});
+		});
+	</script>
+</head>
+<body class="wrap" data-spy="scroll" data-target="#sidemenu">
+
+<div class="header">
+	<ul class="menu d-none d-sm-block">
+		<li class="menu_item menu_item-current"><a class="menu_link" href="index.html">Portfolio</a></li>
+		<li class="menu_item"><a class="menu_link" href="files/Resume_Kristina_Alekseeva.pdf" target="_blank">Resume</a></li>
+		<li class="menu_item">
+			<a class="contactIcon" href="https://www.linkedin.com/in/alekseevakristina" target="_blank"><img src="img/linkedIn.png" width="24" alt="LinkedIn"></a>
+		</li>
+		<li class="menu_item" style="margin-left: 5px;">
+			<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="24" alt="LinkedIn"></a>
+		</li>
+	</ul>
+
+	<div class="menu-burger__btn d-xs-inline-block d-sm-none" data-menu-burger=""><span></span></div>
+
+	<div class="logo"><a href="index.html"><img src="img/mylogo.png" width="133" alt="Kristina Alekseeva"></a></div>
+</div>
+
+<div class="paper paper__top paper__white paper__sideMenu" id="overview" style="position: relative;">
+
+	<nav id="sidemenu" class="d-none d-sm-block">
+		<ul class="sideMenu nav flex-column">
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#research">User Research</a></li>
+			<!--<li class="sideMenu_item nav-item"><a class="nav-link" href="#storymap">Story maps</a></li>-->
+			<li class="sideMenu_item nav-item"><a class="nav-link" href="#solution">Solution</a></li>
+			<!-- <li class="sideMenu_item nav-item"><a class="nav-link" href="#accessibility">Accessibility</a></li> -->
+		</ul>
+	</nav>
+
+	<div class="row content">
+		<div class="col-xl-7 col-md-8  mx-auto">
+			<p class="backLink"><a href="index.html#mobile">Back to projects</a></p>
+
+			<h1 class="title mb-5">Hey Mentor Mobile App</h1>
+
+			<p style="font-weight: 300; font-size: 20px;" class="mb-5">
+				A&nbsp;mobile application for mentor-mentee communication.
+			</p>
+
+			<div class="brief mb-5"><div class="row">
+				<div class="col-md-4">
+					<p class="brief_title">Type</p>
+					<p>Short-term project</p>
+				</div>
+				<div class="col-md-4">
+					<p class="brief_title">Role</p>
+					<p>UI/UX&nbsp;Designer, UX&nbsp;Researcher</p>
+				</div>
+				<div class="col-md-4">
+					<p class="brief_title">Timeline</p>
+					<p>Jul 2018-Sep 2019</p>
+				</div>
+			</div></div>
+
+
+			<p>
+				Hey Mentor is a non-profit organization that provides a mentorship program
+				where college students help high-school graduates with applying to colleges.
+			</p>
+			<p>
+				I conducted user reasearch, designed a mobile application for mentor-mentee communication
+				and helped with a website.
+			</p>
+			<a class="borderButton mt-4" id="jumpToSolution" href="#solution">Jump to solution</a>
+		</div>
+	</div>
+</div>
+
+<div class="paper paper__sideMenu content" id="research" style="position: relative;">
+	<div class="row">
+		<div class="col-xl-7 col-md-8 mx-auto mb-4">
+			<h2 class="g-h2 mb-4">User Research</h2>
+
+			<p>
+				I conducted user research as soon as I joined the team,
+				even though the&nbsp;dev team had already started to code a mobile application.
+				My goal was to see how the whole process looked at the moment for mentors and mentees,
+				to define their pain points, and to understand how the app can help solve them.
+			</p>
+			<p>
+				Based on contextual interviews and quiestiionaries,
+				I defined user needs and created user story maps to navigate the dev team
+				through key scenarios for both mentors and mentees.
+			</p>
+			<p>
+				Mentor-mentee communication looked pretty simple from the first sight: connect, chat, share docs and links,
+				and work with docs.
+			</p>
+		</div>
+		<div class="col-xl-7 col-md-8 mx-auto mb-4 mt-2">
+			<img src="img/steps-hey-mentor.png" style="width:  100%" />
+		</div>
+		<div class="col-xl-7 col-md-8 mx-auto mb-4 mt-4">
+			<h3 class="g-h3 mb-4">Findings</h3>
+			<p class="mb-4">
+				<b class="g-superbold">Communication.</b> A mobile app indeed could help solve some problems in communication. Users mentioned
+				that it was hard to navigate between different channels like fb, email, and messages. They had to be inventive in how to remind
+				themselves to reply in time. They had no way of knowing if their message was read by another person if they sent it via email.
+				All that could be fixed by a single app.
+			</p>
+			<p class="mb-4">
+				<b class="g-superbold">Sharing documents and links.</b> The current version of the app was completely missing functionality
+				for sharing documents and links which was the most important part of the mentorship.
+			</p>
+			<p>
+				<b class="g-superbold">Work with documents.</b> Both mentors and mentees worked with documents
+				on their computers and not on the phones. It meant that just a&nbsp;mobile application would
+				break their flow.
+			</p>
+		</div>
+
+	</div>
+</div>
+
+<div class="paper paper__white paper__sideMenu content" id="solution" style="position: relative;">
+	<div class="row">
+		<div class="col-xl-7 col-md-8 mx-auto">
+			<h2 class="mb-4 g-h2">Solution</h2>
+
+			<p>
+				I designed a mobile app that would improve communication between mentors and mentees.
+				It would also serve as a useful tool for sharing documents and links. And the most important thing
+				was that I&nbsp;designed a&nbsp;desktop version of the app to allow user to continue their
+				journey when working with docs.
+			</p>
+
+		</div>
+
+		<div class="w-100"></div>
+
+		<div class="col-xl-10 mx-auto pt-4"><div class="row">
+
+			<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+				<a href="img/hey-mentor/list.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/hey-mentor/list.png" class="img-fluid">
+				</a>
+				<p class="pt-2 text-center g-smallFont">
+					All communication with all mentees in&nbsp;one app
+				</p>
+			</div>
+			<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+				<a href="img/hey-mentor/notifications.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/hey-mentor/notifications.png" class="img-fluid">
+				</a>
+				<p class="pt-2 text-center g-smallFont">
+					The app notifies when users need to&nbsp;reply
+				</p>
+			</div>
+			<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+				<a href="img/hey-mentor/messages.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/hey-mentor/messages.png" class="img-fluid">
+				</a>
+				<p class="pt-2 text-center g-smallFont">
+					Users can see if their message was read and they can share files
+				</p>
+			</div>
+			<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+				<a href="img/hey-mentor/profile.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/hey-mentor/profile.png" class="img-fluid">
+				</a>
+				<p class="pt-2 text-center g-smallFont">
+					Both mentors and mentees can see profiles of each other
+				</p>
+			</div>
+
+			<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+				<a href="img/hey-mentor/links.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/hey-mentor/links.png" class="img-fluid">
+				</a>
+				<p class="pt-2 text-center g-smallFont">
+					Users can easily find shared links, files, and images
+				</p>
+			</div>
+			<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+				<a href="img/hey-mentor/files.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/hey-mentor/files.png" class="img-fluid">
+				</a>
+			</div>
+			<!-- <div class="col-xl-3 col-md-3 col-sm-4 my-3">
+				<a href="img/tutor/Confirm-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/tutor/Confirm-min.png" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-xl-3 col-md-3 col-sm-4 my-3">
+				<a href="img/tutor/Done-min.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/tutor/Done-min.png" class="img-fluid">
+				</a>
+			</div> -->
+		</div></div>
+
+		<div class="w-100"></div>
+
+		<!-- <div class="col-xl-6 col-md-6 mx-auto pb-4 mt-4">
+				<p class="g-smallFont text-center">
+					I designed a desktop verison of the app to allow users to continue to work
+					with documents.
+				</p>
+		</div>
+
+		<div class="w-100"></div> -->
+
+		<div class="col-xl-10 mx-auto mt-4"><div class="row">
+			<div class="col-xl-6 col-md-6 my-3">
+				<a href="img/hey-mentor/home-desktop.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/hey-mentor/home-desktop.png" class="img-fluid imgBorder">
+				</a>
+			</div>
+
+			<div class="col-xl-6 col-md-6 my-3">
+				<a href="img/hey-mentor/links-desktop.png" data-toggle="lightbox" data-gallery="wireframes-gallery">
+					<img src="img/hey-mentor/links-desktop.png" class="img-fluid imgBorder">
+				</a>
+			</div>
+
+			<!-- <img src="img/hey-mentor/home-desktop.png" class="img-fluid imgBorder"></div>
+			<div class="mb-4"><img src="img/hey-mentor/links-desktop.png" class="img-fluid imgBorder"></div>
+			<img src="img/hey-mentor/home-desktop.png" class="img-fluid imgBorder"> -->
+		</div></div>
+
+	</div>
+</div>
+
+<div class="footer py-4">
+	<p class="mb-2">Contact Kristina</p>
+	<p class="textMe_links">
+		<a class="contactIcon" href="https://www.linkedin.com/in/alekseevakristina" target="_blank"><img src="img/linkedIn.png" width="40" alt="LinkedIn"></a>
+		<a class="contactIcon" href="mailto:kris.alexeeva@gmail.com" target="_blank"><img src="img/mail.png" width="40" alt="LinkedIn"></a>
+	</p>
+</div>
+
+</body>
+</html>
