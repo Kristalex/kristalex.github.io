@@ -91,7 +91,7 @@
 				</p>-->
 
 				<p style="font-weight: 300; font-size: 20px;" class="mb-5">
-					A web application for the Russian b2b/b2g market that aggregates auctions published by&nbsp;state companies (customers)
+					A web application for the Russian b2b/b2g market that aggregates auctions published by&nbsp;state companies-customers
 					and serves as&nbsp;a&nbsp;search and management tool for&nbsp;companies-suppliers.
 				</p>
 
@@ -114,17 +114,21 @@
 						<p>Jan 2013–Mar 2018</p>
 					</div>
 				</div></div>
+				<h3 class="g-h3">Market</h3>
 				<p>
-					<h3 class="g-h3">Market</h3>
-					In Russia, state companies (customers) are obligated to publish services and products they need on special platforms as auctions.
+					In Russia, state companies-customers are obligated to publish services and products they need on special platforms as auctions.
 					Companies-suppliers search for those auctions to participate in them and win the contract.
 				</p>
+				<img src="img/purchases/market.png" class="img-fluid">
+				<!-- <div class="mt-4 g-highlight">
+					<p>Goal was to help suppliers&nbsp;<br>&nbsp;search and work with auctions</p>
+				</div> -->
+				<h3 class="g-h3">Our app</h3>
 				<p>
-					<h3 class="g-h3">Goal</h3>
-					To help suppliers search and work with auctions.
+					Our app was <b class="g-superbold">to help suppliers</b> search and work with auctions.
 				</p>
-				<p>
-					<h3 class="g-h3">What I did</h3>
+				<h3 class="g-h3 mt-4 pt-3">What I did</h3>
+				<p class="pb-2">
 					I led this project from the initial vision to 18k+ paid users.
 					I helped in conducting user and competitive research, analyzing data, defining user personas and an&nbsp;MVP.
 					Based on research, I&nbsp;iteratively created user flows, wireframes, interactive prototypes,
@@ -210,48 +214,69 @@
 						<p class="g-smallFont">
 							Composing search requests took too much time because the form was too complicated.
 						</p>
-						<p class="g-bold mb-1 g-smallFont">Solution</p>
+						<p class="g-superbold mb-1">Solution</p>
 						<p class="g-smallFont">
-							Research showed that there were 2 search options that 90% users used every time &mdash;
-							keywords and region. We launched our MVP with just these two options.
-							Then we research other scenarios and iteratively added new options
-							depending on their importance and frequency.
-							My job was to make sure every new option brings value and that
-							the search form continues to look clear and easy to use.
+							Fewer search options, only important ones, prioritized visually. I made sure every new option brought value and
+							the search form continued to be easy to use.
+						</p>
+						<p class="g-superbold mb-1">Result</p>
+						<p class="g-smallFont">
+							Our form shortened the time of composing search requests from 15-20&#8239;min to 5-10&#8239;min
+							in&nbsp;comparison to&nbsp;other apps.
 						</p>
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
 						<a href="img/purchases/search-min.png" data-toggle="lightbox" data-gallery="search-gallery">
 							<img src="img/purchases/search-min.png" class="img-fluid imgBorder">
 						</a>
+						<p class="g-smallFont pt-3">
+							The research showed that there were 2 search options that 90% users used every time &mdash;
+							keywords and region. We launched our MVP with just these two options.
+							Then we research other scenarios and iteratively added new options
+							depending on their importance and frequency.
+						</p>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-xl-4 pb-4 pr-0">
-						<b class="g-superbold mb-1">Problem &ldquo;Irrelevant results&rdquo;</b>
+						<b class="g-superbold mb-1">Problem &ldquo;Results are hard to look through&rdquo;</b>
 						<p class="g-smallFont">
-							Too many irrelevant results.
+							In other apps users struglled with too many irrelevant results.
+							In addition, the results view didn't help to make a&nbsp;decision.
 						</p>
-						<b class="g-bold mb-1 g-smallFont">Obstacles</b>
+						<b class="g-bold mb-1 g-superbold">Solution</b>
 						<p class="g-smallFont">
+							Engineers worked hard on a search engine. I designed resutls sorted by publish date and opportunity to sort results differently
+							depending on a scenario. Based on research, I only showed the most important info.
+						</p>
+						<!-- <p class="g-smallFont">
 							Users searched periodically and needed new auctions to be on top which meant sorting by publish date. But&nbsp;this solution
 							was technically harder to implement than, for example, sorting by relevance. Engineers needed more time
 							and also real data to configure search engine settings.
-						</p>
-						<p class="g-bold mb-1 g-smallFont">Solution</p>
+						</p> -->
+						<p class="g-bold mb-1 g-superbold">Result</p>
 						<p class="g-smallFont">
+							On user testings of the working app, we noticed that users found most of what they were looking for on the first two pages.
+							They also could say right away if it's a potential auction for them.
+						</p>
+						<!-- <p class="g-smallFont">
 							I designed a compromise solution where results were sorted by relevance
 							but users had a time filter (2&nbsp;days, week, all) to limit the amount of results.<br>
 							When engineers found the right configuration, I&nbsp;designed the final version
 							with search results sorted by a publish date. Eventually, we added an&nbsp;opportunity
 							to sort results depending on a&nbsp;scenario.
-						</p>
+						</p> -->
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
 						<a href="img/purchases/sameHeight/search-short-min.png" data-toggle="lightbox" data-gallery="search-gallery">
 							<img src="img/purchases/sameHeight/search-short-min.png" class="img-fluid imgBorder">
 						</a>
+						<p class="g-smallFont pt-3">
+							This solution wasn't immediate. We had technical obstacles
+							and I designed a compromise solution at first to give engineers time.
+							It also allowed us to gather real search requests data to improve the search engine.
+						</p>
 					</div>
 				</div>
 
@@ -261,17 +286,17 @@
 						<p class="g-smallFont">
 							Users had to compose their regular search requests every single&nbsp;time.
 						</p>
-						<p class="g-bold mb-1 g-smallFont">Solution</p>
+						<p class="g-superbold mb-1">Solution</p>
 						<p class="g-smallFont">
 							We designed “Saved searches” to allow users to save regular
 							requests and get notifications by email about new auctions.
 						</p>
-						<p class="g-bold mb-1 g-smallFont">Redesign</p>
+						<p class="g-superbold mb-1">Result</p>
 						<p class="g-smallFont">
-							I had to redesign the subscription process because we noticed that
-							users were not subscribing as we expected. First, the subscribe button was
-							only on the saved searches page. Instead, I added a subscribe checkbox
-							when users were saving new search requests. The subscription rates went up.
+							We saw in our metrics that users started to save their regular searches. In general, typical company
+							had around 4-5 saved searches. One saved search request now took them one second instead of 1-3 minutes.
+							After some redesign, users started to subscribe to notifications about new auctions as well. We noticed them
+							entering the app through those emails.
 						</p>
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
@@ -281,6 +306,12 @@
 						<a href="img/purchases/email_new.png" data-toggle="lightbox" data-gallery="search-gallery">
 							<img src="img/purchases/email_new.png" class="img-fluid imgBorder mt-4">
 						</a>
+						<p class="g-smallFont pt-3">
+							I had to redesign the subscription process because we noticed that
+							users were not subscribing as we expected. First, the subscribe button was
+							only on the saved searches page. Instead, I added a subscribe checkbox
+							when users were saving new search requests. The subscription rates went up.
+						</p>
 					</div>
 				</div>
 
@@ -296,10 +327,15 @@
 							users spent too much time on decision making
 							and often needed external support.
 						</p>
-						<p class="g-bold mb-1 g-smallFont">Solution</p>
+						<p class="g-superbold mb-1">Solution</p>
 						<p class="g-smallFont">
-							Working closely with a Business Analyst, we unified auction data
-							from different sources and simplified it.
+							I collaborated with a Business Analyst to unify auction data from different sources,
+							simplify and prioritize it, and remove duplicates and multi-level structure.
+						</p>
+						<p class="g-superbold mb-1">Result</p>
+						<p class="g-smallFont">
+							We did usability testings where asked users to find some information in the auction.
+							It took them much less time to do it with our one page design than in other apps.
 						</p>
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
@@ -315,17 +351,24 @@
 						<p class="g-smallFont">
 							Users couldn't check if they could trust customers and if the auction is legit.
 						</p>
-						<p class="g-bold mb-1 g-smallFont">Solution</p>
+						<p class="g-superbold mb-1">Solution</p>
 						<p class="g-smallFont">
-							I designed the whole flow for users to check customers
+							I designed the whole flow for suppliers to check customers
 							and uncover an&nbsp;affiliation.
 						</p>
-						<p class="g-bold mb-1 g-smallFont">Insight &hearts;</p>
+						<p class="g-superbold mb-1">Result</p>
+						<p class="g-smallFont">
+							We measured clicks on auction pages that led to customer's analysis.
+							Supplies indeed used it pretty often. To learn if our analytics was usful,
+							we launched a&nbsp;poll among users that showed that it was. Some users
+							requested additional info that we added later.
+						</p>
+						<!-- <p class="g-superbold mb-1">Insight &hearts;</p>
 						<p class="g-smallFont">
 							A lot of our competitors showed complicated analytics
 							with similar data but we learned that users didn't understand it
 							and couldn't apply to their business. So we dug deep to make analytics valuable.
-						</p>
+						</p> -->
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
 						<a href="img/purchases/customer-min.png" data-toggle="lightbox" data-gallery="analysis-gallery">
@@ -352,10 +395,17 @@
 							the website by hand, created Excel files, and combined it all into emails
 							to&nbsp;share with their coworkers.
 						</p>
-						<p class="g-bold mb-1 g-smallFont">Solution</p>
+						<p class="g-superbold mb-1">Solution</p>
 						<p class="g-smallFont">
 							We created an online storage &ldquo;Favorites&rdquo; to&nbsp;make the work process
 							and collaboration easier.
+						</p>
+						<p class="g-superbold mb-1">Result</p>
+						<p class="g-smallFont">
+							We saw in the app how many auctions users started to save to work with them later.
+							Users asked for more and more features. It looked like they were slowly
+							moving their internal processes to our app. They commented on saved auctions, created different states
+							for auctions and changed them.
 						</p>
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
@@ -380,9 +430,15 @@
 							suppliers didn't know they needed
 							to change their application documents and failed the auctions.
 						</p>
-						<p class="g-bold mb-1 g-smallFont">Solution</p>
+						<p class="g-superbold mb-1">Solution</p>
 						<p class="g-smallFont">
-							We found a way to learn about changes and started to&nbsp;notify users about them.
+							We found a way to automatically learn about changes and started to&nbsp;notify users about them.
+						</p>
+						<p class="g-superbold mb-1">Result</p>
+						<p class="g-smallFont">
+							Users stopped spending time on a manually check while
+							they were prepping for the auction. It eliminated situations when suppliers lost auctions
+							because of the changed conditions.
 						</p>
 					</div>
 					<div class="col-xl-7 pb-5 offset-xl-1 pr-xl-5 pr-lg-0">
