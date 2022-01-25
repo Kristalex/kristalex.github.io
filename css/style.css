@@ -104,6 +104,25 @@ h1 {
 .g-staticLink:visited {
     color: #188ba8;
 }
+.g-highlight {
+	position: relative;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1.8;
+	text-align: center;
+	}
+	.g-highlight::before {
+		content: '—';
+		color: #DD3A3A;
+	}
+	.g-highlight::after {
+		content: '—';
+		color: #DD3A3A;
+	}
+	.g-highlight p {
+		position: relative;
+		padding: 30px 0 15px;
+		}
 
 .imgBorder {
 	border: 1px #EDEDED solid;
